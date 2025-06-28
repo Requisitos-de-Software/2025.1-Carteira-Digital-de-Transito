@@ -1,0 +1,5647 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../nfrframework/">
+      
+      
+        <link rel="next" href="../historia-de-usuario/">
+      
+      
+      <link rel="icon" href="../../../assets/egdf_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Backlog - e-GDF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#backlog" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="e-GDF" class="md-header__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            e-GDF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="e-GDF" class="md-nav__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    e-GDF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata_inspecao1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata da inspeção da entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/aplicativos_selecionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/app_selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heat Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/termos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Termo de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/analise_documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise de Documentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moscow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/roi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/req_elicitados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/perfil_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nfrframework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Temas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tema-1-autenticação" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 1: Autenticação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-2-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 2: Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-3-serviços-do-cidadão" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 3: Serviços do Cidadão
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-4-comunicação" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 4: Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-5-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 5: Documentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-6-atendimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 6: Atendimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-7-mobilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 7: Mobilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-8-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 8: Privacidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-9-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 9: Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Épicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#épico-1-autenticação-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 1: Autenticação Segura (EP01)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-2-interface-personalizável" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 2: Interface Personalizável (EP02)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-3-recursos-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 3: Recursos de Acessibilidade (EP03)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-4-serviços-centralizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 4: Serviços Centralizados (EP04)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-5-informações-públicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 5: Informações Públicas (EP05)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-6-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 6: Agendamentos (EP06)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-7-comunicações-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 7: Comunicações Personalizadas (EP07)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-8-gestão-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 8: Gestão de Documentos (EP08)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-9-canais-suporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 9: Canais de Suporte (EP09)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-10-transporte-público" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 10: Transporte Público (EP10)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-11-controle-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 11: Controle de Privacidade (EP11)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-da-tabela-do-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da tabela do Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backlog_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-1-ana-victoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 1 - Ana Victória
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-2-artur-mendonca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 2 - Artur Mendonça
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-3-gabriel-lopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 3 - Gabriel Lopes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-4-joao-marcos-moraes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 4 - João Marcos Moraes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-5-karoline-luz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 5 - Karoline Luz
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem-entrevista-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem - (Entrevista 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem-entrevista-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem - (Entrevista 2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem - (Entrevista 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-6-lucas-mendonca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 6 - Lucas Mendonça
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-7-luiza-silva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 7 - Luiza Silva
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referência Bibliográfica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../historia-de-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matriz_rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/forward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/backward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../validacao/prototipacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototipação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../validacao/comprovacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega-final
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega-final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/aplicativo-selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/artefatos-criados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/execucao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/ferramentas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/entrega-final/resultados-alcancados.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/tabela-apresentacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabela de Apresentações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/tecnicas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/panejamento-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/verificacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/validacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/consideracoes-finais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Considerações Finais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/avaliacao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliação -1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega01/entrega01grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega02/entrega02grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega03/entrega03grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega04/entrega04grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega05/entrega05grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega06/entrega06grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega01/entrega01grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega02/entrega02grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega03/entrega03grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega04/entrega04grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega05/entrega05grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega06/entrega06grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_1_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_2_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_3_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_4_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_6_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_5_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_1_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_2_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_3_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_4_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_6_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_5_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Temas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tema-1-autenticação" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 1: Autenticação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-2-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 2: Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-3-serviços-do-cidadão" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 3: Serviços do Cidadão
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-4-comunicação" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 4: Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-5-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 5: Documentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-6-atendimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 6: Atendimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-7-mobilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 7: Mobilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-8-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 8: Privacidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-9-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tema 9: Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Épicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#épico-1-autenticação-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 1: Autenticação Segura (EP01)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-2-interface-personalizável" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 2: Interface Personalizável (EP02)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-3-recursos-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 3: Recursos de Acessibilidade (EP03)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-4-serviços-centralizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 4: Serviços Centralizados (EP04)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-5-informações-públicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 5: Informações Públicas (EP05)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-6-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 6: Agendamentos (EP06)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-7-comunicações-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 7: Comunicações Personalizadas (EP07)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-8-gestão-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 8: Gestão de Documentos (EP08)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-9-canais-suporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 9: Canais de Suporte (EP09)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-10-transporte-público" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 10: Transporte Público (EP10)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#épico-11-controle-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épico 11: Controle de Privacidade (EP11)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-da-tabela-do-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estrutura da tabela do Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backlog_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-1-ana-victoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 1 - Ana Victória
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-2-artur-mendonca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 2 - Artur Mendonça
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-3-gabriel-lopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 3 - Gabriel Lopes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-4-joao-marcos-moraes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 4 - João Marcos Moraes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-5-karoline-luz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 5 - Karoline Luz
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem-entrevista-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem - (Entrevista 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem-entrevista-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem - (Entrevista 2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem - (Entrevista 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-6-lucas-mendonca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 6 - Lucas Mendonça
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-7-luiza-silva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação 7 - Luiza Silva
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referência Bibliográfica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="backlog">Backlog</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Este documento apresenta o backlog do produto para o aplicativo e-GDF, uma plataforma digital do Governo do Distrito Federal que centraliza serviços públicos e facilita o acesso do cidadão a diversas funcionalidades governamentais. </p>
+<p>O Backlog do produto é uma lista contendo todas as funcionalidades desejadas para um produto. O conteúdo desta lista é definido pelo Product Owner. O Product Backlog não precisa estar completo no início de um projeto. Pode-se começar com tudo aquilo que é mais óbvio em um primeiro momento. Com o tempo, o Product Backlog cresce e muda à medida que se aprende mais sobre o produto e seus usuários<a href="#ref1" id="citacao1">¹</a>.</p>
+<p>Um backlog bem gerenciado traz diversos benefícios para o projeto, incluindo<a href="#ref2" id="citacao2">²</a>:</p>
+<ul>
+<li>Priorização aprimorada das tarefas mais críticas</li>
+<li>Maior eficiência no desenvolvimento</li>
+<li>Melhor comunicação entre a equipe</li>
+<li>Redução do desperdício de recursos</li>
+<li>Maior satisfação do cliente através da priorização baseada em feedback</li>
+</ul>
+<p>Para este projeto, o backlog foi estruturado seguindo as melhores práticas de desenvolvimento ágil, organizando os requisitos funcionais em uma hierarquia clara de épicos, features e histórias de usuário. O processo de elaboração incluiu a análise detalhada dos requisitos funcionais levantados nas etapas anteriores do projeto, a criação de histórias de usuário que representam as necessidades reais dos cidadãos do DF, e a validação com usuários reais para garantir que as funcionalidades propostas atendam efetivamente às expectativas e necessidades da população.</p>
+<h2 id="participantes">Participantes</h2>
+<p><strong>Tabela 1</strong> - Participantes da elaboração do backlog</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Participante</strong></th>
+<th style="text-align: left;"><strong>Função</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a></td>
+<td style="text-align: left;">Desenvolvedor(a)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/ArtyMend07">Artur Mendonça Arruda</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/BrzGab">Gabriel Lopes de Amorim</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes De Andrade</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+<td style="text-align: left;">Desenvolvedor(a)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/lucasarruda9">Lucas Mendonça Arruda</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td style="text-align: left;">Desenvolvedor(a)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça Arruda</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025).</em></p>
+<h2 id="metodologia">Metodologia</h2>
+<p>O desenvolvimento do backlog seguiu uma abordagem sistemática e colaborativa, onde cada integrante da equipe foi responsável por um conjunto específico de requisitos funcionais. A metodologia adotada compreendeu as seguintes etapas:</p>
+<ol>
+<li>
+<p><strong>Análise e Agrupamento</strong>: Os requisitos funcionais foram analisados e agrupados em temas relacionados, considerando as principais áreas de serviço do aplicativo e-GDF.</p>
+</li>
+<li>
+<p><strong>Criação de Épicos</strong>: A partir dos temas identificados, foram elaborados épicos que representam grandes narrativas de funcionalidades.</p>
+</li>
+<li>
+<p><strong>Elaboração de Histórias de Usuário</strong>: Os épicos foram detalhados em histórias de usuário no formato padrão "Como... Eu quero... Para que...", garantindo clareza sobre o valor entregue ao usuário final.</p>
+</li>
+<li>
+<p><strong>Priorização</strong>: Os itens do backlog foram priorizados considerando<a href="#ref2" id="citacao3">²</a>:</p>
+</li>
+<li>Prioridade do cliente e feedback dos usuários</li>
+<li>Urgência no recebimento de feedback</li>
+<li>Dificuldade de implementação relativa</li>
+<li>
+<p>Relações e dependências entre itens de trabalho</p>
+</li>
+<li>
+<p><strong>Validação com Usuários</strong>: Cada integrante realizou validação presencial com usuários reais, apresentando os backlogs elaborados e coletando feedback para garantir alinhamento com as necessidades dos cidadãos.</p>
+</li>
+</ol>
+<h2 id="temas">Temas</h2>
+<p>Analisando as histórias de usuário, foi possível organizá-las inicialmente em 9 grandes temas:</p>
+<h3 id="tema-1-autenticação">Tema 1: Autenticação</h3>
+<p>Sistema de autenticação seguro e integrado, permitindo que os usuários acessem seus dados pessoais e utilizem os serviços governamentais de forma protegida e confiável.</p>
+<h3 id="tema-2-usabilidade">Tema 2: Usabilidade</h3>
+<p>Interface intuitiva e personalizável para usuários com diferentes níveis de familiaridade com tecnologia, garantindo navegação eficiente e confortável.</p>
+<h3 id="tema-3-serviços-do-cidadão">Tema 3: Serviços do Cidadão</h3>
+<p>Acesso centralizado aos principais serviços públicos, permitindo resolver demandas de forma prática e digital sem deslocamento físico.</p>
+<h3 id="tema-4-comunicação">Tema 4: Comunicação</h3>
+<p>Sistema de notificações e comunicações personalizadas e relevantes, mantendo o cidadão informado sobre assuntos importantes de forma oportuna.</p>
+<h3 id="tema-5-documentos">Tema 5: Documentos</h3>
+<p>Gestão de documentos e comprovantes digitais, permitindo gerar, visualizar e compartilhar documentos com acesso rápido ao histórico de interações.</p>
+<h3 id="tema-6-atendimento">Tema 6: Atendimento</h3>
+<p>Canais de suporte e sistemas de registro de ocorrências, permitindo resolver dúvidas e contribuir para a melhoria dos serviços públicos.</p>
+<h3 id="tema-7-mobilidade">Tema 7: Mobilidade</h3>
+<p>Informações e serviços relacionados ao transporte público do DF, facilitando o planejamento de deslocamentos e gestão de serviços de mobilidade.</p>
+<h3 id="tema-8-privacidade">Tema 8: Privacidade</h3>
+<p>Controle sobre informações pessoais e garantias de conformidade legal, assegurando o uso do aplicativo com confiança e segurança.</p>
+<h3 id="tema-9-acessibilidade">Tema 9: Acessibilidade</h3>
+<p>Recursos de apoio visual e auditivo para usuários com necessidades especiais, garantindo navegação sem barreiras.</p>
+<h2 id="epicos">Épicos</h2>
+<p>Após a definição dos temas, eles são "quebrados" em épicos de modo a diminuir ainda mais a abstração das atividades que deverão ser realizadas no projeto.</p>
+<h3 id="épico-1-autenticação-segura">Épico 1: Autenticação Segura (EP01)</h3>
+<p>Como usuário do aplicativo e-GDF, eu quero ter acesso a um sistema de autenticação seguro e integrado, para que eu possa acessar meus dados pessoais e utilizar os serviços governamentais de forma protegida e confiável.</p>
+<h3 id="épico-2-interface-personalizável">Épico 2: Interface Personalizável (EP02)</h3>
+<p>Como usuário com diferentes níveis de familiaridade com tecnologia, eu quero ter acesso a uma interface intuitiva e personalizável, para que eu possa utilizar o aplicativo de forma eficiente e confortável, independentemente das minhas limitações ou preferências.</p>
+<h3 id="épico-3-recursos-acessibilidade">Épico 3: Recursos de Acessibilidade (EP03)</h3>
+<p>Como usuário com necessidades especiais de acessibilidade, eu quero ter recursos de apoio visual e auditivo, para que eu possa navegar e utilizar todas as funcionalidades do aplicativo sem barreiras.</p>
+<h3 id="épico-4-serviços-centralizados">Épico 4: Serviços Centralizados (EP04)</h3>
+<p>Como cidadão do Distrito Federal, eu quero ter acesso centralizado aos principais serviços públicos, para que eu possa resolver minhas demandas de forma prática e digital sem precisar me deslocar fisicamente.</p>
+<h3 id="épico-5-informações-públicas">Épico 5: Informações Públicas (EP05)</h3>
+<p>Como usuário interessado em informações públicas, eu quero ter acesso a notícias e informações oficiais do governo, para que eu possa me manter informado sobre políticas e serviços que me afetam.</p>
+<h3 id="épico-6-agendamentos">Épico 6: Agendamentos (EP06)</h3>
+<p>Como cidadão que utiliza serviços públicos, eu quero poder agendar e acompanhar meus atendimentos, para que eu possa organizar minha agenda e ter controle sobre os serviços solicitados.</p>
+<h3 id="épico-7-comunicações-personalizadas">Épico 7: Comunicações Personalizadas (EP07)</h3>
+<p>Como usuário do aplicativo, eu quero receber comunicações personalizadas e relevantes, para que eu possa ser notificado sobre assuntos que são importantes para mim de forma oportuna e organizada.</p>
+<h3 id="épico-8-gestão-documentos">Épico 8: Gestão de Documentos (EP08)</h3>
+<p>Como cidadão que precisa de documentos e comprovantes, eu quero poder gerar, visualizar e compartilhar meus documentos digitais, para que eu possa ter acesso rápido aos meus comprovantes e histórico de interações com o governo.</p>
+<h3 id="épico-9-canais-suporte">Épico 9: Canais de Suporte (EP09)</h3>
+<p>Como usuário que precisa de ajuda ou tem problemas para relatar, eu quero ter acesso a canais de suporte e sistemas de registro de ocorrências, para que eu possa resolver dúvidas e contribuir para a melhoria dos serviços públicos.</p>
+<h3 id="épico-10-transporte-público">Épico 10: Transporte Público (EP10)</h3>
+<p>Como usuário do transporte público do DF, eu quero ter acesso a informações e serviços relacionados ao transporte, para que eu possa planejar meus deslocamentos e gerenciar meus serviços de mobilidade urbana.</p>
+<h3 id="épico-11-controle-privacidade">Épico 11: Controle de Privacidade (EP11)</h3>
+<p>Como usuário preocupado com a privacidade dos meus dados, eu quero ter controle sobre minhas informações pessoais e garantias de conformidade legal, para que eu possa utilizar o aplicativo com confiança e segurança.</p>
+<h2 id="estrutura-da-tabela-do-backlog">Estrutura da tabela do Backlog</h2>
+<p><strong>Tabela 2</strong> - Estrutura do backlog</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Tema</strong></th>
+<th style="text-align: left;"><strong>Épico (ID)</strong></th>
+<th style="text-align: left;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Prioridade</strong></th>
+<th style="text-align: left;"><strong>Rastreabilidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Nome do <a href="#temas">Tema</a> definido</td>
+<td style="text-align: left;">Nome do <a href="#epicos">Épico</a> (Identificador do <a href="#epicos">Épico</a>)</td>
+<td style="text-align: left;">Título da <a href="../historia-de-usuario/">História de Usuário</a> (Identificador da <a href="../historia-de-usuario/">História de Usuário</a>)</td>
+<td style="text-align: left;">Identificador do Requisito referente a <a href="../historia-de-usuario/">História de usuário</a></td>
+<td style="text-align: left;">Prioridade baseada na técnica do <a href="../../../elicitacao/tec_priorizacao/moscow/">MoSCoW</a></td>
+<td style="text-align: left;">Rastreabilidade do requisito utilizado</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça Arruda</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025).</em></p>
+<h2 id="backlog_1">Backlog</h2>
+<p><strong>Tabela 3</strong> - Backlog completo do produto e-GDF</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Realizar login com acesso unificado do GOV.br (<a href="../historia-de-usuario/">US01</a>)</td>
+<td style="text-align: center;">RF22</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Compartilhamento e salvamento de informações importantes (<a href="../historia-de-usuario/">US02</a>)</td>
+<td style="text-align: center;">RF18</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR20</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Acesso a suporte com instruções de uso (<a href="../historia-de-usuario/">US03</a>)</td>
+<td style="text-align: center;">RF27</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN11</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Acompanhamento de status de solicitações (<a href="../historia-de-usuario/">US04</a>)</td>
+<td style="text-align: center;">RF30</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD04</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Confirmação da resolução de problemas (<a href="../historia-de-usuario/">US05</a>)</td>
+<td style="text-align: center;">RF31</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD06</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Exclusão de conta e dados pessoais (<a href="../historia-de-usuario/">US06</a>)</td>
+<td style="text-align: center;">RF32</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD07</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Conformidade com LGPD (<a href="../historia-de-usuario/">US07</a>)</td>
+<td style="text-align: center;">RNF02</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Alteração de idioma no aplicativo (<a href="../historia-de-usuario/">US08</a>)</td>
+<td style="text-align: center;">RF12</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR13</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Personalização de preferências e perfil (<a href="../historia-de-usuario/">US09</a>)</td>
+<td style="text-align: center;">RF13</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR14</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Envio de mensagens curtas para lembretes (<a href="../historia-de-usuario/">US10</a>)</td>
+<td style="text-align: center;">RF14</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR15</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Seleção do tipo de serviço (implantação, limpeza ou reparo) (<a href="../historia-de-usuario/">US11</a>)</td>
+<td style="text-align: center;">RF35</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT03</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Registro detalhado da ocorrência (<a href="../historia-de-usuario/">US12</a>)</td>
+<td style="text-align: center;">RF36</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT04</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-7-mobilidade">Mobilidade</a></td>
+<td style="text-align: center;"><a href="#épico-10-transporte-público">Transporte Público</a> (EP10)</td>
+<td style="text-align: center;">Acesso a serviços de transporte e pré-cadastro do cartão mobilidade (<a href="../historia-de-usuario/">US13</a>)</td>
+<td style="text-align: center;">RF38</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT08</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Compatibilidade com Android e iOS (<a href="../historia-de-usuario/">US14</a>)</td>
+<td style="text-align: center;">RNF01</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Ajuste de tamanho de fonte e contraste de cores (<a href="../historia-de-usuario/">US15</a>)</td>
+<td style="text-align: center;">RF07</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR07</a>, <a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD08</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Ativação do modo escuro (<a href="../historia-de-usuario/">US16</a>)</td>
+<td style="text-align: center;">RF08</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR08</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Geração de relatórios e visualização de comprovantes (<a href="../historia-de-usuario/">US17</a>)</td>
+<td style="text-align: center;">RF10</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR11</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-7-mobilidade">Mobilidade</a></td>
+<td style="text-align: center;"><a href="#épico-10-transporte-público">Transporte Público</a> (EP10)</td>
+<td style="text-align: center;">Localização de ônibus em tempo real (<a href="../historia-de-usuario/">US18</a>)</td>
+<td style="text-align: center;">RF19</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Acesso facilitado a serviços de impostos (<a href="../historia-de-usuario/">US19</a>)</td>
+<td style="text-align: center;">RF23</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Categorização de ocorrências (<a href="../historia-de-usuario/">US20</a>)</td>
+<td style="text-align: center;">RF34</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT02</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Proteção de informações pessoais com criptografia (<a href="../historia-de-usuario/">US21</a>)</td>
+<td style="text-align: center;">RNF22</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT18</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Acessar informações de agendamento e reagendamento (<a href="../historia-de-usuario/">US22</a>)</td>
+<td style="text-align: center;">RF16</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR17</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Reportar problemas da cidade via mapa interativo (<a href="../historia-de-usuario/">US23</a>)</td>
+<td style="text-align: center;">RF25</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN09</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Acessar números de serviços de emergência (<a href="../historia-de-usuario/">US24</a>)</td>
+<td style="text-align: center;">RF26</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN10</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT05</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Solicitar serviços como coleta de lixo e reparos (<a href="../historia-de-usuario/">US25</a>)</td>
+<td style="text-align: center;">RF28</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD02</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Localizar solicitações no mapa (<a href="../historia-de-usuario/">US26</a>)</td>
+<td style="text-align: center;">RF29</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD03</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Emitir tributos, certidões e documentos fiscais (<a href="../historia-de-usuario/">US27</a>)</td>
+<td style="text-align: center;">RF43</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a>, <a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR18</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Interface acessível para idosos (<a href="../historia-de-usuario/">US28</a>)</td>
+<td style="text-align: center;">RNF16</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Realizar login com acesso unificado do GOV.br (<a href="../historia-de-usuario/">US29</a>)</td>
+<td style="text-align: center;">RF01</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR01</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD01</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Interface acessível para usuários com pouca familiaridade tecnológica (<a href="../historia-de-usuario/">US30</a>)</td>
+<td style="text-align: center;">RF02</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR02</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Receber notificações personalizadas baseadas em localização (<a href="../historia-de-usuario/">US31</a>)</td>
+<td style="text-align: center;">RF03</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR03</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-5-informações-públicas">Informações Públicas</a> (EP05)</td>
+<td style="text-align: center;">Acessar e visualizar notícias relevantes (<a href="../historia-de-usuario/">US32</a>)</td>
+<td style="text-align: center;">RF09</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR10</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Menu com principais funções na tela inicial (<a href="../historia-de-usuario/">US33</a>)</td>
+<td style="text-align: center;">RF15</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR16</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Links para serviços externos com explicações claras (<a href="../historia-de-usuario/">US34</a>)</td>
+<td style="text-align: center;">RF20</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Estabilidade e desempenho em redes móveis (<a href="../historia-de-usuario/">US35</a>)</td>
+<td style="text-align: center;">RNF13</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Consulta centralizada de agendamentos e serviços (<a href="../historia-de-usuario/">US36</a>)</td>
+<td style="text-align: center;">RF04</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR04</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Assistente virtual com acessibilidade por voz (<a href="../historia-de-usuario/">US37</a>)</td>
+<td style="text-align: center;">RF05</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR05</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD05</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Tutoriais passo a passo do aplicativo (<a href="../historia-de-usuario/">US38</a>)</td>
+<td style="text-align: center;">RF06</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR06</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Integração com serviços de saúde, educação e mobilidade (<a href="../historia-de-usuario/">US39</a>)</td>
+<td style="text-align: center;">RF11</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR12</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Consulta de informações educacionais (<a href="../historia-de-usuario/">US40</a>)</td>
+<td style="text-align: center;">RF21</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT07</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Registro de ocorrências de infraestrutura (<a href="../historia-de-usuario/">US41</a>)</td>
+<td style="text-align: center;">RF33</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT01</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Performance das funcionalidades principais (<a href="../historia-de-usuario/">US42</a>)</td>
+<td style="text-align: center;">RNF20</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT16</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Emitir tributos, certidões e documentos fiscais (<a href="../historia-de-usuario/">US43</a>)</td>
+<td style="text-align: center;">RF39</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT09</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-5-informações-públicas">Informações Públicas</a> (EP05)</td>
+<td style="text-align: center;">Feed com notícias oficiais do GDF (<a href="../historia-de-usuario/">US44</a>)</td>
+<td style="text-align: center;">RF42</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT12</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Agendar atendimentos de serviços sociais (<a href="../historia-de-usuario/">US45</a>)</td>
+<td style="text-align: center;">RF37</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT06</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Acompanhar pendências escolares (<a href="../historia-de-usuario/">US46</a>)</td>
+<td style="text-align: center;">RF24</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Visualizar histórico de interações e solicitações (<a href="../historia-de-usuario/">US47</a>)</td>
+<td style="text-align: center;">RF41</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT11</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Receber notificações por categorias (<a href="../historia-de-usuario/">US48</a>)</td>
+<td style="text-align: center;">RF17</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR19</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Consultar informações offline (<a href="../historia-de-usuario/">US49</a>)</td>
+<td style="text-align: center;">RNF23</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT20</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça Arruda</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025).</p></font></p>
+<h2 id="validacao">Validação</h2>
+<p><strong>Tabela 4</strong> - Estrutura da tabela de validação</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Tema</strong></th>
+<th style="text-align: left;"><strong>Épico (ID)</strong></th>
+<th style="text-align: left;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Prioridade</strong></th>
+<th style="text-align: left;"><strong>Status</strong></th>
+<th style="text-align: left;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: left;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Nome do <a href="#temas">Tema</a> definido</td>
+<td style="text-align: left;">Nome do <a href="#epicos">Épico</a> (Identificador do <a href="#epicos">Épico</a>)</td>
+<td style="text-align: left;">Título da <a href="../historia-de-usuario/">História de Usuário</a> (Identificador da <a href="../historia-de-usuario/">História de Usuário</a>)</td>
+<td style="text-align: left;">Identificador do Requisito referente a <a href="../historia-de-usuario/">História de usuário</a></td>
+<td style="text-align: left;">Prioridade baseada na técnica do <a href="../../../elicitacao/tec_priorizacao/moscow/">MoSCoW</a></td>
+<td style="text-align: left;">Status de conclusão da validação</td>
+<td style="text-align: left;">Rastreabilidade do requisito utilizado</td>
+<td style="text-align: left;"><a href="#autores">Autor</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça Arruda</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025).</p></font></p>
+<h3 id="validacao-1-ana-victoria">Validação 1 - Ana Victória</h3>
+<p><strong>Vídeo 1</strong> - Validação com usuário por Ana Victória</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yfFuc19aF20" title="Validação Backlog - Ana Victória" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><strong>Tabela 4</strong> - Informações da validação 1</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Realizar login com acesso unificado do GOV.br (<a href="../historia-de-usuario/">US29</a>)</td>
+<td style="text-align: center;">RF01</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR01</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD01</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Interface acessível para usuários com pouca familiaridade tecnológica (<a href="../historia-de-usuario/">US30</a>)</td>
+<td style="text-align: center;">RF02</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR02</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Receber notificações personalizadas baseadas em localização (<a href="../historia-de-usuario/">US31</a>)</td>
+<td style="text-align: center;">RF03</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR03</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-5-informações-públicas">Informações Públicas</a> (EP05)</td>
+<td style="text-align: center;">Acessar e visualizar notícias relevantes (<a href="../historia-de-usuario/">US32</a>)</td>
+<td style="text-align: center;">RF09</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR10</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Menu com principais funções na tela inicial (<a href="../historia-de-usuario/">US33</a>)</td>
+<td style="text-align: center;">RF15</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR16</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Links para serviços externos com explicações claras (<a href="../historia-de-usuario/">US34</a>)</td>
+<td style="text-align: center;">RF20</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Estabilidade e desempenho em redes móveis (<a href="../historia-de-usuario/">US35</a>)</td>
+<td style="text-align: center;">RNF13</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a></td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/navicg">Ana Victória</a></td>
+<td style="text-align: left;">Ana Geralda Xavier</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/navicg">Ana Victória</a>, 2025).</p></font></p>
+<h2 id="termo-de-consentimento-de-imagem">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a cidadã Ana Geralda Xavier forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1xYrhXi9XEChbp37phZao5D57Tu_ZPrM6/view?usp=sharing">PDF</a></p>
+<p style="text-align: center"><font size="3">Fonte: Elaborado por (<a href="https://github.com/navicg">Ana Victória</a>, 2025).</font></p>
+
+<h3 id="validacao-2-artur-mendonca">Validação 2 - Artur Mendonça</h3>
+<p><strong>Vídeo 2</strong> - Validação com usuário por Artur Mendonça</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1U298AC6rZ8" title="Validação Backlog - Artur Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtu.be/1U298AC6rZ8" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<p><strong>Tabela 5</strong> - Informações da validação 2</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Consulta centralizada de agendamentos e serviços (<a href="../historia-de-usuario/">US36</a>)</td>
+<td style="text-align: center;">RF04</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR04</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Assistente virtual com acessibilidade por voz (<a href="../historia-de-usuario/">US37</a>)</td>
+<td style="text-align: center;">RF05</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR05</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD05</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Tutoriais passo a passo do aplicativo (<a href="../historia-de-usuario/">US38</a>)</td>
+<td style="text-align: center;">RF06</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR06</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Integração com serviços de saúde, educação e mobilidade (<a href="../historia-de-usuario/">US39</a>)</td>
+<td style="text-align: center;">RF11</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR12</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Consulta de informações educacionais (<a href="../historia-de-usuario/">US40</a>)</td>
+<td style="text-align: center;">RF21</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT07</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Registro de ocorrências de infraestrutura (<a href="../historia-de-usuario/">US41</a>)</td>
+<td style="text-align: center;">RF33</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT01</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Performance das funcionalidades principais (<a href="../historia-de-usuario/">US42</a>)</td>
+<td style="text-align: center;">RNF20</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT16</a></td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td style="text-align: left;">Mateus Bastos dos Santos</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025).</p></font></p>
+<h2 id="termo-de-consentimento-de-imagem_1">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a cidadã Ana Geralda Xavier forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/195qwdk-np0_d4IMXCRbUWCllJCcPYC15/view?usp=sharing">PDF</a></p>
+<p style="text-align: center"><font size="3">Fonte: Elaborado por (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025).</font></p>
+
+<h3 id="validacao-3-gabriel-lopes">Validação 3 - Gabriel Lopes</h3>
+<p><strong>Vídeo 3</strong> - Validação com usuário por Gabriel Lopes</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GdncDHMK1DQ" title="Validação Backlog - Gabriel Lopes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><strong>Tabela 6</strong> - Informações da validação 3</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Ajuste de tamanho de fonte e contraste de cores (<a href="../historia-de-usuario/">US15</a>)</td>
+<td style="text-align: center;">RF07</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR07</a>, <a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a>, <a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD08</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Ativação do modo escuro (<a href="../historia-de-usuario/">US16</a>)</td>
+<td style="text-align: center;">RF08</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR08</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Geração de relatórios e visualização de comprovantes (<a href="../historia-de-usuario/">US17</a>)</td>
+<td style="text-align: center;">RF10</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR11</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-7-mobilidade">Mobilidade</a></td>
+<td style="text-align: center;"><a href="#épico-10-transporte-público">Transporte Público</a> (EP10)</td>
+<td style="text-align: center;">Localização de ônibus em tempo real (<a href="../historia-de-usuario/">US18</a>)</td>
+<td style="text-align: center;">RF19</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Acesso facilitado a serviços de impostos (<a href="../historia-de-usuario/">US19</a>)</td>
+<td style="text-align: center;">RF23</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Categorização de ocorrências (<a href="../historia-de-usuario/">US20</a>)</td>
+<td style="text-align: center;">RF34</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT02</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Proteção de informações pessoais com criptografia (<a href="../historia-de-usuario/">US21</a>)</td>
+<td style="text-align: center;">RNF22</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT18</a></td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: left;">Daniel Rodrigues Nascimento</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025).</p></font></p>
+<h2 id="termo-de-consentimento-de-imagem_2">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão <strong>Daniel Rodrigues Nascimento</strong> forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1EB1p_smwvLfqsPcUb_7nWpKIXuzLOx02/view?usp=sharing">PDF</a></p>
+<h3 id="validacao-4-joao-marcos-moraes">Validação 4 - João Marcos Moraes</h3>
+<p><strong>Vídeo 4</strong> - Validação com usuário por <a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jNa4ZpVfA0M" title="Validação Backlog - João Marcos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtu.be/jNa4ZpVfA0M" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<p><strong>Tabela 7</strong> - Informações da validação 4</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Alteração de idioma no aplicativo (<a href="../historia-de-usuario/">US08</a>)</td>
+<td style="text-align: center;">RF12</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anMHor_BS">BR13</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Personalização de preferências e perfil (<a href="../historia-de-usuario/">US09</a>)</td>
+<td style="text-align: center;">RF13</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR14</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Envio de mensagens curtas para lembretes (<a href="../historia-de-usuario/">US10</a>)</td>
+<td style="text-align: center;">RF14</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR15</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Seleção do tipo de serviço (implantação, limpeza ou reparo) (<a href="../historia-de-usuario/">US11</a>)</td>
+<td style="text-align: center;">RF35</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT03</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Registro detalhado da ocorrência (<a href="../historia-de-usuario/">US12</a>)</td>
+<td style="text-align: center;">RF36</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT04</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-7-mobilidade">Mobilidade</a></td>
+<td style="text-align: center;"><a href="#épico-10-transporte-público">Transporte Público</a> (EP10)</td>
+<td style="text-align: center;">Acesso a serviços de transporte e pré-cadastro do cartão mobilidade (<a href="../historia-de-usuario/">US13</a>)</td>
+<td style="text-align: center;">RF38</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT08</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-2-usabilidade">Usabilidade</a></td>
+<td style="text-align: center;"><a href="#épico-2-interface-personalizável">Interface Personalizável</a> (EP02)</td>
+<td style="text-align: center;">Compatibilidade com Android e iOS (<a href="../historia-de-usuario/">US14</a>)</td>
+<td style="text-align: center;">RNF01</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a></td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td style="text-align: left;">Bianca Regina</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025).</p></font></p>
+<h2 id="termo-de-consentimento-de-imagem_3">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão Vitor Pereira forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="/docs/assets/backlog-termo/Bianca-termo%20de%20Consentimento%20.pdf">PDF</a></p>
+<h3 id="validacao-5-karoline-luz">Validação 5 - Karoline Luz</h3>
+<p><strong>Vídeo 5</strong> - Validação com usuário por  <a href="https://github.com/KarolineLuz">Karoline Luz</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E0MSih6ABqg" title="Validação Backlog - Karoline Luz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtu.be/E0MSih6ABqg" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<p><strong>Vídeo 6</strong> - Validação com usuário por  <a href="https://github.com/KarolineLuz">Karoline Luz</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LE1eMGZdH1U" title="Validação Backlog - Karoline Luz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtu.be/LE1eMGZdH1U" target="_blank">Clique aqui para 
+assistir no YouTube</a></p>
+
+<p><strong>Tabela 8</strong> - Informações da validação 5</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Acessar informações de agendamento e reagendamento (<a href="../historia-de-usuario/">US22</a>)</td>
+<td style="text-align: center;">RF16</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR17</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Reportar problemas da cidade via mapa interativo (<a href="../historia-de-usuario/">US23</a>)</td>
+<td style="text-align: center;">RF25</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN09</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Acessar números de serviços de emergência (<a href="../historia-de-usuario/">US24</a>)</td>
+<td style="text-align: center;">RF26</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN10</a>, <a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT05</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Solicitar serviços como coleta de lixo e reparos (<a href="../historia-de-usuario/">US25</a>)</td>
+<td style="text-align: center;">RF28</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD02</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Localizar solicitações no mapa (<a href="../historia-de-usuario/">US26</a>)</td>
+<td style="text-align: center;">RF29</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD03</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Emitir tributos, certidões e documentos fiscais (<a href="../historia-de-usuario/">US27</a>)</td>
+<td style="text-align: center;">RF43</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a>, <a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR18</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-9-acessibilidade">Acessibilidade</a></td>
+<td style="text-align: center;"><a href="#épico-3-recursos-acessibilidade">Recursos de Acessibilidade</a> (EP03)</td>
+<td style="text-align: center;">Interface acessível para idosos (<a href="../historia-de-usuario/">US28</a>)</td>
+<td style="text-align: center;">RNF16</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">Validado</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="termo-de-consentimento-de-imagem-entrevista-1">Termo de consentimento de imagem - (Entrevista 1)</h2>
+<p>Este documento confirma que o cidadão Leonardo Rodrigues Martins forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1K8P5RS7xYEd8k3xGEkLp9QrjuAOqB51s/view?usp=sharing">PDF</a></p>
+<h2 id="termo-de-consentimento-de-imagem-entrevista-2">Termo de consentimento de imagem - (Entrevista 2)</h2>
+<p>Este documento confirma que o cidadão Júnia Luz de Sousa forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1tAtNRMAKPoStT9ZyOU-DdT1I9mJgC5qK/view?usp=sharing">PDF</a></p>
+<table>
+<thead>
+<tr>
+<th>Entrevistador(es)</th>
+<th>Cidadão</th>
+<th>Data prevista</th>
+<th>Data Realizada</th>
+<th>Horário Previsto</th>
+<th>Horário Realizado</th>
+<th>Local</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><strong>Leonardo R.M</strong></td>
+<td>01/05/2025</td>
+<td>01/05/2025</td>
+<td>15:30</td>
+<td>15:45</td>
+<td>Microsoft - Teams</td>
+<td>05:21 min</td>
+</tr>
+<tr>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><strong>Júnia L.S</strong></td>
+<td>20/06/2025</td>
+<td>20/06/2025</td>
+<td>16:10</td>
+<td>16:20</td>
+<td>Presencial</td>
+<td>03:07 min</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center"><font size="3">Fonte: Elaborado por (<a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025).</font></p>
+
+<h3 id="validacao-6-lucas-mendonca">Validação 6 - Lucas Mendonça</h3>
+<p><strong>Vídeo 7</strong> - Validação com usuário por Lucas Mendonça</p>
+<iframe width="560" height="315" src="https://youtube.com/embed/R7kMTJI2olg?si=4KrjLObnLS1_vVUL" title="Validação Backlog - Lucas Mendonça" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtube.com/R7kMTJI2olg?si=4KrjLObnLS1_vVUL" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<p><strong>Tabela 9</strong> - Informações da validação 6</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Emitir tributos, certidões e documentos fiscais (<a href="../historia-de-usuario/">US43</a>)</td>
+<td style="text-align: center;">RF39</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT09</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-5-informações-públicas">Informações Públicas</a> (EP05)</td>
+<td style="text-align: center;">Feed com notícias oficiais do GDF (<a href="../historia-de-usuario/">US44</a>)</td>
+<td style="text-align: center;">RF42</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT12</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Agendar atendimentos de serviços sociais (<a href="../historia-de-usuario/">US45</a>)</td>
+<td style="text-align: center;">RF37</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT06</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-4-serviços-centralizados">Serviços Centralizados</a> (EP04)</td>
+<td style="text-align: center;">Acompanhar pendências escolares (<a href="../historia-de-usuario/">US46</a>)</td>
+<td style="text-align: center;">RF24</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Visualizar histórico de interações e solicitações (<a href="../historia-de-usuario/">US47</a>)</td>
+<td style="text-align: center;">RF41</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT11</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-4-comunicação">Comunicação</a></td>
+<td style="text-align: center;"><a href="#épico-7-comunicações-personalizadas">Comunicações Personalizadas</a> (EP07)</td>
+<td style="text-align: center;">Receber notificações por categorias (<a href="../historia-de-usuario/">US48</a>)</td>
+<td style="text-align: center;">RF17</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR19</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Consultar informações offline (<a href="../historia-de-usuario/">US49</a>)</td>
+<td style="text-align: center;">RNF23</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/introspeccao/#anchor_INTT">INT20</a></td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td style="text-align: left;">Vitor Lustosa</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center"><font size="3">Fonte: Elaborado por (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025).</font></p>
+
+<h3 id="validacao-7-luiza-silva">Validação 7 - Luiza Silva</h3>
+<p><strong>Vídeo 8</strong> - Validação com usuário por Luiza Silva</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7lg5Khu2J6s" title="Validação Backlog - Luiza Silva" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p style="text-align: center"><a href="https://youtu.be/7lg5Khu2J6s" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<p><strong>Tabela 10</strong> - Informações da validação 7</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Tema</strong></th>
+<th style="text-align: center;"><strong>Épico (ID)</strong></th>
+<th style="text-align: center;"><strong>História do Usuário (US)</strong></th>
+<th style="text-align: center;"><strong>ID</strong></th>
+<th style="text-align: center;"><strong>Prioridade</strong></th>
+<th style="text-align: center;"><strong>Status</strong></th>
+<th style="text-align: center;"><strong>Rastreabilidade</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="#tema-1-autenticação">Autenticação</a></td>
+<td style="text-align: center;"><a href="#épico-1-autenticação-segura">Autenticação Segura</a> (EP01)</td>
+<td style="text-align: center;">Realizar login com acesso unificado do GOV.br (<a href="../historia-de-usuario/">US01</a>)</td>
+<td style="text-align: center;">RF22</td>
+<td style="text-align: center;">MH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-5-documentos">Documentos</a></td>
+<td style="text-align: center;"><a href="#épico-8-gestão-documentos">Gestão de Documentos</a> (EP08)</td>
+<td style="text-align: center;">Compartilhamento e salvamento de informações importantes (<a href="../historia-de-usuario/">US02</a>)</td>
+<td style="text-align: center;">RF18</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR20</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-6-atendimento">Atendimento</a></td>
+<td style="text-align: center;"><a href="#épico-9-canais-suporte">Canais de Suporte</a> (EP09)</td>
+<td style="text-align: center;">Acesso a suporte com instruções de uso (<a href="../historia-de-usuario/">US03</a>)</td>
+<td style="text-align: center;">RF27</td>
+<td style="text-align: center;">CH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN11</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Acompanhamento de status de solicitações (<a href="../historia-de-usuario/">US04</a>)</td>
+<td style="text-align: center;">RF30</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD04</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-3-serviços-do-cidadão">Serviços do Cidadão</a></td>
+<td style="text-align: center;"><a href="#épico-6-agendamentos">Agendamentos</a> (EP06)</td>
+<td style="text-align: center;">Confirmação da resolução de problemas (<a href="../historia-de-usuario/">US05</a>)</td>
+<td style="text-align: center;">RF31</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD06</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Exclusão de conta e dados pessoais (<a href="../historia-de-usuario/">US06</a>)</td>
+<td style="text-align: center;">RF32</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD07</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#tema-8-privacidade">Privacidade</a></td>
+<td style="text-align: center;"><a href="#épico-11-controle-privacidade">Controle de Privacidade</a> (EP11)</td>
+<td style="text-align: center;">Conformidade com LGPD (<a href="../historia-de-usuario/">US07</a>)</td>
+<td style="text-align: center;">RNF02</td>
+<td style="text-align: center;">SH</td>
+<td style="text-align: center;">em progresso</td>
+<td style="text-align: center;"><a href="../../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a></td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Autor</strong></th>
+<th style="text-align: left;"><strong>Usuário Participante</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/Luizaxx">Luiza Silva</a></td>
+<td style="text-align: left;">Thalisson Felipe</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025).</p></font></p>
+<h2 id="termo-de-consentimento-de-imagem_4">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão Vitor Pereira forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1Vx3nkS_CSteiuCCOe2M4GVtsV7QjfV8V/view?usp=share_link">PDF</a></p>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado por (<a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025).</p></font></p>
+<h2 id="referencia-bibliografica">Referência Bibliográfica</h2>
+<blockquote>
+<p><a id="REF1" href="#citacao1">1.</a> SERRANO, Milene; SERRANO, Maurício. Requisitos – Aula 15. Universidade de Brasília, Faculdade do Gama, [s.d.].</p>
+<p><a id="REF2" href="#citacao2">2.</a> RADIGAN, Dan. O backlog do produto: sua lista de tarefas definitiva. Atlassian.</p>
+</blockquote>
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p>SERRANO, Milene; SERRANO, Maurício. Requisitos – Aula 15. Universidade de Brasília, Faculdade do Gama, [s.d.]. Disponível em: <a href="https://aprender3.unb.br/pluginfile.php/3096144/mod_resource/content/1/Requisitos%20-%20Aula%2015a.pdf">Link</a>. Acesso em: 28 maio 2025.</p>
+<p>RADIGAN, Dan. O backlog do produto: sua lista de tarefas definitiva. Atlassian. Disponível em: <a href="https://www.atlassian.com/br/agile/scrum/backlogs">Link</a>. Acesso em: 28 maio 2025.</p>
+<p>O QUE É BACKLOG DO PRODUTO SCRUM E COMO FAZER UM. Lucidchart. Disponível em: <a href="https://www.lucidchart.com/blog/pt/como-fazer-um-backlog-do-produto">Link</a>. Acesso em: 28 maio 2025. </p>
+</blockquote>
+<figure id="ref-backlog-fonte1">
+    <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/fix/ultimos-ajustes/docs/assets/font1-backlog.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/fix/ultimos-ajustes/docs/assets/font1-backlog.png" alt="Exemplo de Product Backlog" width="500" onerror="this.onerror=null;this.src='../../assets/agil/backlog/backlog-fonte1.png'"></a>
+    <figcaption>Fonte: SERRANO, Milene; SERRANO, Maurício. Requisitos - Aula 15. Universidade de Brasília, Faculdade do Gama, [s.d.].</figcaption>
+</figure>
+
+<figure id="ref-backlog-fonte2">
+    <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/fix/ultimos-ajustes/docs/assets/font2-backlog.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/fix/ultimos-ajustes/docs/assets/font2-backlog.png" alt="Benefícios e Priorização do Product Backlog" width="500" onerror="this.onerror=null;this.src='../../assets/agil/backlog/backlog-fonte2.png'"></a>
+    <figcaption>Fonte: RADIGAN, Dan. O backlog do produto: sua lista de tarefas definitiva. Atlassian.</figcaption>
+</figure>
+
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Data</th>
+<th>Revisor</th>
+<th>Data Revisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Criação da página</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>23/05/2025</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td>23/05/2025</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Criação da introdução e do padrão a ser seguido</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Reorganização das seções de referências e adição base das referências bibliográficas</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>29/05/2025</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Criação de tabelas de Product Backlog RF12, RF13, RF14, RF35, RF36, RF38, RNF01</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Criação de tabelas de Product Backlog RF22, RF18, RF27, RF30, RF31, RF32, RNF02</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>Criação de tabelas de Product Backlog RF04, RF05, RF06, RF11, RF21, RF33, RNF20</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>Criação de tabelas de Product Backlog RF16, RF25, RF26, RF28, RF29, RF43, RNF16</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>Criação de tabelas de Product Backlog RF01, RF02, RF03, RF09, RF15, RF20, RNF13</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>Criação de tabelas de Product Backlog RF07, RF08, RF10, RF19, RF23, RF34, RNF22</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>30/05/2025</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>1.9</td>
+<td>Criação de tabelas de Product Backlog US46, US43, US49, US47, US45, US44, US48</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>31/05/2025</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>31/05/2025</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>Criação dos temas, épicos e das tabelas</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>31/05/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>31/05/2025</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>Ajuste dos temas e épicos, e adição de rastreabilidade (hyperlinks)</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Adicionando Entrevista e Termo de consentimento</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>Correção das prioridades dos requisitos RF04, RF05, RF06, RF11, RF21, RF33, RNF20</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>Validação do Product Backlog  RF01, RF02, RF03, RF09, RF15, RF20, RNF13 com usuário real</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>Validaçaõ do Product Backlog com usuario real RF07, RF08, RF10, RF19, RF23, RF34, RNF22</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>30/05/2025</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>Validação do Product Backlog RF04, RF05, RF06, RF11, RF21, RF33, RNF20</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>Adicionando Entrevista presencial</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>20/06/2025</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td>22/06/2025</td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>Adicionando Entrevista presencial</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>21/06/2025</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td>22/06/2025</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

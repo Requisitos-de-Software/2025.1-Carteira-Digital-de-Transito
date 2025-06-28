@@ -1,0 +1,7067 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../forward_from/">
+      
+      
+        <link rel="next" href="../../validacao/prototipacao/">
+      
+      
+      <link rel="icon" href="../../assets/egdf_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Backward From - e-GDF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#backward-from" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="e-GDF" class="md-header__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            e-GDF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backward From
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="e-GDF" class="md-nav__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    e-GDF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata_inspecao1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata da inspeção da entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/aplicativos_selecionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/app_selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heat Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/termos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Termo de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/analise_documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise de Documentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moscow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/roi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/req_elicitados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/perfil_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/nfrframework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/historia-de-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matriz_rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backward-from_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward-from
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cartoes-de-relacionamento-dos-elos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Relacionamento dos Elos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Requisitos Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cartões de Requisitos Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF24
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf25" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf26" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF26
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf27" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF27
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf28" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF28
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf29" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF29
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf30" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF30
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf31" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF31
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf32" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf33" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF33
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf34" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF34
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf35" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF35
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf36" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF36
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf37" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF37
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf38" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF38
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf39" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF39
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf40" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF40
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf41" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF41
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf42" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF42
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf43" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF43
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf44" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF44
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Requisitos Não Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cartões de Requisitos Não Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rnf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF24
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validacao/prototipacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototipação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validacao/comprovacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega-final
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega-final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/aplicativo-selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/artefatos-criados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/execucao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/ferramentas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/entrega-final/resultados-alcancados.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/tabela-apresentacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabela de Apresentações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/tecnicas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/panejamento-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/verificacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/validacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/consideracoes-finais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Considerações Finais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/avaliacao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliação -1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega01/entrega01grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega02/entrega02grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega03/entrega03grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega04/entrega04grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega05/entrega05grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega06/entrega06grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega01/entrega01grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega02/entrega02grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega03/entrega03grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega04/entrega04grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega05/entrega05grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega06/entrega06grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_1_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_2_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_3_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_4_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_6_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_5_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_1_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_2_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_3_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_4_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_6_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inspecao/inspecao_5_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backward-from_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward-from
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cartoes-de-relacionamento-dos-elos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Relacionamento dos Elos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Requisitos Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cartões de Requisitos Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF24
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf25" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf26" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF26
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf27" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF27
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf28" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF28
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf29" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF29
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf30" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF30
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf31" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF31
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf32" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf33" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF33
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf34" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF34
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf35" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF35
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf36" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF36
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf37" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF37
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf38" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF38
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf39" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF39
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf40" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF40
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf41" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF41
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf42" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF42
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf43" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF43
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf44" class="md-nav__link">
+    <span class="md-ellipsis">
+      RF44
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Requisitos Não Funcionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cartões de Requisitos Não Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rnf01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnf24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RNF24
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="backward-from">Backward-from</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Os elos de rastreabilidade são conexões essenciais que estabelecem vínculos entre diferentes artefatos e atividades ao longo do ciclo de vida de um projeto ou sistema. Esses elos permitem rastrear a origem e a evolução de funcionalidades, decisões de projeto e mudanças, garantindo um gerenciamento eficaz e uma qualidade consistente. Utilizando a rastreabilidade, é possível identificar a proveniência de cada funcionalidade do sistema, assegurar que todos os requisitos foram devidamente testados e validados, registrar decisões críticas para o projeto e gerenciar os riscos de maneira eficiente. Além disso, a rastreabilidade facilita o controle de mudanças ao indicar quais artefatos são impactados por alterações específicas, promovendo uma gestão integrada e transparente do desenvolvimento e manutenção de sistemas.<a id="RP1" href="#citacao-elo1"><sup>[1]</sup></a></p>
+<h3 id="backward-from_1">Backward-from</h3>
+<p>A rastreabilidade backward-from é um processo crítico na engenharia de requisitos, que permite a ligação dos requisitos às suas fontes originais. Esse tipo de rastreabilidade é essencial para garantir que todos os requisitos identificados tenham uma origem bem definida, facilitando a validação e verificação durante o ciclo de vida do desenvolvimento do software. Além disso, a rastreabilidade backward-from ajuda a gerenciar mudanças ao rastrear de volta cada requisito até suas bases, assegurando que qualquer modificação no sistema possa ser rapidamente associada à sua origem, permitindo uma resposta eficaz a alterações e garantindo a conformidade com os requisitos iniciais do projeto.<a id="RP2" href="#citacao-elo2"><sup>[2]</sup></a></p>
+<h2 id="participantes">Participantes</h2>
+<p><strong>Tabela 1 -</strong> Participantes da Rastreabilidade Backward-from</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/navicg">Ana Victória</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/Luizaxx">Luiza Silva</a></td>
+<td style="text-align: left;">07/06/2025</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Utilizamos um cartão baseado nos cartões presentes nos slides dos Professores Milene Serrano e Maurício Serrano na página 22 à 27<a id="RP3" href="#citacao-elo3"><sup>[3]</sup></a>, as categorias e tipos de elos derivam do Meta-modelo de Toranzo. Os cartões que fizemos utilizam o mesmo formato, porém fizemos baseados nos requisitos onde cada cartão possui todos os tipos de Elos daquele requisito citado.</p>
+<h3 id="cartoes-de-relacionamento-dos-elos">Cartões de Relacionamento dos Elos</h3>
+<p><strong>Tabela 2 -</strong> Exemplo de cartão</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;">RE01, UC01, CE01, ENT01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Descrição do que se trata o requisito</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;">Agregação: RE01 - ENT01: O requisito originou-se da entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim/Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autores: <a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a>.</em></p>
+<p><strong>Legenda: <a id="RP4" href="#citacao-elo4"><sup>[4]</sup></a></strong></p>
+<ul>
+<li><strong>Categoria</strong>: Devem ser classificadas em quatro níveis<ul>
+<li><strong>Ambiental</strong>: Congrega informações oriundas do contexto ambiental onde a organização está inserida e que podem afetar o sistema sendo desenvolvido.</li>
+<li><strong>Organizacional</strong>: Reúne informações relacionadas à organização (missão, objetivos, metas e padrões) e que podem impactar os requisitos do sistema.</li>
+<li><strong>Gerencial</strong>: Agrega informações que permitem associar tarefas a requisitos, e que podem auxiliar a gerência do projeto.</li>
+<li><strong>Desenvolvimento</strong>: Abarca informações relacionadas aos diversos artefatos gerados no processo de desenvolvimento (documento de requisitos, diagramas, programas, casos de testes, ...).</li>
+</ul>
+</li>
+<li><strong>Elementos</strong>: Lista de identificadores que representam <a href="../../elicitacao/req_elicitados/">requisitos</a> (RE01), <a href="../../modelagem/casos_de_uso/">casos de uso</a> (US01), <a href="../../modelagem/cenario/">cenários</a> (CEN01) e <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">técnicas de elicitação de requisitos</a> (ENT01).</li>
+<li><strong>Elos Backward-from</strong>: Primeiro, mostra-se o tipo de elo e depois a origem do requisito. Por exemplo, o requisito REQ01 originou-se da entrevista ENT01.</li>
+<li><strong>Tipos de Elos <a id="RP5" href="#citacao-elo5"><sup>[5]</sup></a></strong>:<ul>
+<li><strong>Satisfação</strong>: Indica que a classe de origem tem dependência de satisfação com a classe de destino.</li>
+<li><strong>Recurso</strong>: Indica que a classe de origem tem dependência de recurso com a classe de destino.</li>
+<li><strong>Responsabilidade</strong>: Registra a participação, responsabilidade e ação de pessoas sobre artefatos.</li>
+<li><strong>Representação</strong>: Captura a representação ou modelagem dos requisitos em outras linguagens.</li>
+<li><strong>Alocado</strong>: Classe de origem está relacionada à classe de destino, que representa um subsistema.</li>
+<li><strong>Agregação</strong>: Indica composição de elementos.</li>
+</ul>
+</li>
+</ul>
+<h2 id="cartoes-de-requisitos-funcionais">Cartões de Requisitos Funcionais</h2>
+<h3 id="rf01">RF01</h3>
+<p><strong>Tabela 3 -</strong> Cartão do Requisito RF01</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF01</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR01</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve conseguir realizar login de forma simples e rápida</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF01 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR01</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD01</a>: O requisito originou-se do brainstorming e da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf02">RF02</h3>
+<p><strong>Tabela 4 -</strong> Cartão do Requisito RF02</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF02</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve conseguir acessar funcionalidades mesmo com pouca familiaridade com tecnologia</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF02 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR02</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf03">RF03</h3>
+<p><strong>Tabela 5 -</strong> Cartão do Requisito RF03</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF03</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder receber notificações personalizadas com base em sua localização</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF03 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR03</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf04">RF04</h3>
+<p><strong>Tabela 6 -</strong> Cartão do Requisito RF04</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF04</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder consultar agendamentos e serviços em um único local centralizado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF04 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR04</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf05">RF05</h3>
+<p><strong>Tabela 7 -</strong> Cartão do Requisito RF05</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF05</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR05</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD05</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ter acesso a um assistente virtual com acessibilidade por voz</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF05 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR05</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD05</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a>: O requisito originou-se do brainstorming, análise de documentos e introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf06">RF06</h3>
+<p><strong>Tabela 8 -</strong> Cartão do Requisito RF06</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF06</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder acessar tutoriais passo a passo sobre como usar o app</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF06 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR06</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf07">RF07</h3>
+<p><strong>Tabela 9 -</strong> Cartão do Requisito RF07</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF07</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR07</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder alterar o tamanho da fonte e o contraste de cores</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF07 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR07</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD08</a>: O requisito originou-se do brainstorming, entrevista e análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf08">RF08</h3>
+<p><strong>Tabela 10 -</strong> Cartão do Requisito RF08</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF08</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir modo escuro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF08 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR08</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf09">RF09</h3>
+<p><strong>Tabela 11 -</strong> Cartão do Requisito RF09</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF09</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR10</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder acessar e visualizar notícias relevantes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF09 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR10</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf10">RF10</h3>
+<p><strong>Tabela 12 -</strong> Cartão do Requisito RF10</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF10</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder gerar relatórios e visualizar comprovantes de agendamentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF10 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR11</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf11">RF11</h3>
+<p><strong>Tabela 13 -</strong> Cartão do Requisito RF11</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF11</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR12</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir a integração com serviços de saúde, educação e mobilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF11 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR12</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf12">RF12</h3>
+<p><strong>Tabela 14 -</strong> Cartão do Requisito RF12</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF12</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR13</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder alterar o idioma do aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF12 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR13</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf13">RF13</h3>
+<p><strong>Tabela 15 -</strong> Cartão do Requisito RF13</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF13</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR14</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder personalizar suas preferências e perfis para recomendações de serviços</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF13 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR14</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf14">RF14</h3>
+<p><strong>Tabela 16 -</strong> Cartão do Requisito RF14</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF14</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR15</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir o envio de mensagens curtas sobre vencimentos e lembretes importantes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF14 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR15</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf15">RF15</h3>
+<p><strong>Tabela 17 -</strong> Cartão do Requisito RF15</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF15</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR16</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder acessar um menu com as principais funções logo na tela inicial</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF15 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR16</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf16">RF16</h3>
+<p><strong>Tabela 18 -</strong> Cartão do Requisito RF16</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF16</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR17</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder acessar informações de agendamento e reagendamento de forma centralizada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF16 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR17</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf17">RF17</h3>
+<p><strong>Tabela 19 -</strong> Cartão do Requisito RF17</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF17</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR19</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir notificações por categorias como saúde, educação, transporte</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF17 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR19</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf18">RF18</h3>
+<p><strong>Tabela 20 -</strong> Cartão do Requisito RF18</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF18</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR20</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve conseguir compartilhar ou salvar informações importantes (como protocolos ou comprovantes)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF18 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR20</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf19">RF19</h3>
+<p><strong>Tabela 21 -</strong> Cartão do Requisito RF19</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF19</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo permite a visualização da localização dos ônibus em tempo real, incluindo previsão de chegada e rota no mapa</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF19 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf20">RF20</h3>
+<p><strong>Tabela 22 -</strong> Cartão do Requisito RF20</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF20</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo fornece links para serviços externos com explicações claras</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF20 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rf21">RF21</h3>
+<p><strong>Tabela 23 -</strong> Cartão do Requisito RF21</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF21</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT07</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo oferece funcionalidades para consulta de informações educacionais, como calendário letivo e status de vagas no CIL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF21 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT07</a>: O requisito originou-se da entrevista e introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Parcial</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf22">RF22</h3>
+<p><strong>Tabela 24 -</strong> Cartão do Requisito RF22</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF22</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo permite autenticação segura através da plataforma gov.br, com opções como reconhecimento facial</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF22 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf23">RF23</h3>
+<p><strong>Tabela 25 -</strong> Cartão do Requisito RF23</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF23</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo facilita o acesso a serviços relacionados a impostos (como boletos do IPVA) com instruções claras</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF23 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf24">RF24</h3>
+<p><strong>Tabela 26 -</strong> Cartão do Requisito RF24</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF24</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo implementa funcionalidades adicionais na área educacional, como acompanhamento de pendências para professores e alunos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF24 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf25">RF25</h3>
+<p><strong>Tabela 27 -</strong> Cartão do Requisito RF25</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF25</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN09</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir que usuários reportem problemas da cidade através de um mapa interativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF25 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN09</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf26">RF26</h3>
+<p><strong>Tabela 28 -</strong> Cartão do Requisito RF26</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF26</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN10</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve fornecer acesso a números de serviços de emergência da polícia</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF26 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN10</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT05</a>: O requisito originou-se da entrevista e introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf27">RF27</h3>
+<p><strong>Tabela 29 -</strong> Cartão do Requisito RF27</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF27</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve oferecer uma seção de suporte ao usuário com instruções de uso</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF27 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN11</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf28">RF28</h3>
+<p><strong>Tabela 30 -</strong> Cartão do Requisito RF28</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF28</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que o usuário solicite serviços públicos como coleta de lixo, reparo de vias e diversos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF28 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD02</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf29">RF29</h3>
+<p><strong>Tabela 31 -</strong> Cartão do Requisito RF29</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF29</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir o usuário utilizar um mapa para localizar onde foi solicitado o serviço</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF29 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD03</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf30">RF30</h3>
+<p><strong>Tabela 32 -</strong> Cartão do Requisito RF30</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF30</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que o usuário visualize e acompanhe o status das suas solicitações</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF30 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD04</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf31">RF31</h3>
+<p><strong>Tabela 33 -</strong> Cartão do Requisito RF31</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF31</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que o usuário confirme a resolução de problemas relatados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF31 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD06</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf32">RF32</h3>
+<p><strong>Tabela 34 -</strong> Cartão do Requisito RF32</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF32</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD07</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que o usuário exclua seus dados e conta do aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF32 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD07</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rf33">RF33</h3>
+<p><strong>Tabela 35 -</strong> Cartão do Requisito RF33</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF33</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Permitir o registro de ocorrências relacionadas a problemas de infraestrutura urbana, como buracos ou falta de iluminação</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF33 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT01</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rf34">RF34</h3>
+<p><strong>Tabela 36 -</strong> Cartão do Requisito RF34</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF34</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Disponibilizar categorias pré-definidas para o tipo de ocorrência, facilitando a triagem pelos órgãos competentes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF34 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT02</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rf35">RF35</h3>
+<p><strong>Tabela 37 -</strong> Cartão do Requisito RF35</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF35</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Permitir ao usuário selecionar o tipo de serviço desejado (implantação, limpeza ou reparo)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF35 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT03</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf36">RF36</h3>
+<p><strong>Tabela 38 -</strong> Cartão do Requisito RF36</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF36</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Possibilitar a adição de descrição textual, imagem e localização GPS da ocorrência</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF36 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT04</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf37">RF37</h3>
+<p><strong>Tabela 39 -</strong> Cartão do Requisito RF37</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF37</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Disponibilizar agendamento de serviços de saúde pública, como vacinação ou doação de sangue</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF37 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT06</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf38">RF38</h3>
+<p><strong>Tabela 40 -</strong> Cartão do Requisito RF38</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF38</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Oferecer acesso a serviços de transporte público, incluindo pré-cadastro do Cartão Mobilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF38 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT08</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf39">RF39</h3>
+<p><strong>Tabela 41 -</strong> Cartão do Requisito RF39</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF39</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT09</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Permitir agendamentos em serviços sociais, como centros de assistência social e habitação</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF39 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT09</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf40">RF40</h3>
+<p><strong>Tabela 42 -</strong> Cartão do Requisito RF40</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF40</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT10</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Disponibilizar a emissão de tributos, certidões e outros documentos fiscais</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF40 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT10</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rf41">RF41</h3>
+<p><strong>Tabela 43 -</strong> Cartão do Requisito RF41</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF41</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Fornecer um histórico de interações do usuário com o aplicativo, incluindo solicitações e agendamentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF41 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT11</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf42">RF42</h3>
+<p><strong>Tabela 44 -</strong> Cartão do Requisito RF42</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF42</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT12</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Apresentar um feed de notícias atualizadas com informações úteis do Governo do Distrito Federal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF42 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT12</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rf43">RF43</h3>
+<p><strong>Tabela 45 -</strong> Cartão do Requisito RF43</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF43</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR18</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Integrar um assistente virtual ou chatbot com respostas automáticas para dúvidas frequentes dos usuários</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF43 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT13</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BS">BR18</a>: O requisito originou-se da introspecção e brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rf44">RF44</h3>
+<p><strong>Tabela 46 -</strong> Cartão do Requisito RF44</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RF">RF44</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT14</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Fornecer um mapa com localização de unidades de serviço público e ocorrências próximas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RF44 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT14</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h2 id="cartoes-de-requisitos-nao-funcionais">Cartões de Requisitos Não Funcionais</h2>
+<h3 id="rnf01">RNF01</h3>
+<p><strong>Tabela 47 -</strong> Cartão do Requisito RNF01</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF01</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve ser compatível com vários dispositivos como Android e iOS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF01 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025.</em></p>
+<h3 id="rnf02">RNF02</h3>
+<p><strong>Tabela 48 -</strong> Cartão do Requisito RNF02</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Organizacional</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF02</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF02 - <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a>: O requisito originou-se da análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/Luizaxx">Luiza Silva</a>, 2025.</em></p>
+<h3 id="rnf03">RNF03</h3>
+<p><strong>Tabela 49 -</strong> Cartão do Requisito RNF03</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF03</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve possuir uma interface simples, limpa e com ícones ilustrativos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF03 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN01</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf04">RNF04</h3>
+<p><strong>Tabela 50 -</strong> Cartão do Requisito RNF04</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF04</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir acessibilidade para pessoas idosas ou com deficiência visual</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF04 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN02</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf05">RNF05</h3>
+<p><strong>Tabela 51 -</strong> Cartão do Requisito RNF05</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF05</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve funcionar mesmo em dispositivos com baixa capacidade de hardware</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF05 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN04</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf06">RNF06</h3>
+<p><strong>Tabela 52 -</strong> Cartão do Requisito RNF06</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF06</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">A navegação deve ser rápida e fluida entre telas, sem necessidade de redirecionamentos excessivos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF06 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN05</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf07">RNF07</h3>
+<p><strong>Tabela 53 -</strong> Cartão do Requisito RNF07</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF07</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve carregar as informações de forma otimizada, reduzindo tempo de resposta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF07 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN06</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf08">RNF08</h3>
+<p><strong>Tabela 54 -</strong> Cartão do Requisito RNF08</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF08</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN07</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT22</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O layout deve ser responsivo para diferentes tamanhos de tela</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF08 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN07</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT22</a>: O requisito originou-se do brainstorming e introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf09">RNF09</h3>
+<p><strong>Tabela 55 -</strong> Cartão do Requisito RNF09</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF09</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve ter compatibilidade com leitores de tela</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF09 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN08</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf10">RNF10</h3>
+<p><strong>Tabela 56 -</strong> Cartão do Requisito RNF10</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF10</a>, <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN09</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O app deve conter linguagem clara e acessível, adequada a diferentes níveis de escolaridade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF10 - <a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN09</a>: O requisito originou-se do brainstorming</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf11">RNF11</h3>
+<p><strong>Tabela 57 -</strong> Cartão do Requisito RNF11</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF11</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ser mais autoexplicativo, com uma navegação intuitiva e menos dependência de redirecionamentos externos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF11 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a>, <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD11</a>: O requisito originou-se da entrevista e análise de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf12">RNF12</h3>
+<p><strong>Tabela 58 -</strong> Cartão do Requisito RNF12</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF12</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve garantir que as informações exibidas sejam atualizadas e reflitam fielmente a realidade, especialmente nas áreas de saúde e educação</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF12 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf13">RNF13</h3>
+<p><strong>Tabela 59 -</strong> Cartão do Requisito RNF13</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF13</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve apresentar estabilidade, evitando travamentos ou falhas de carregamento, especialmente em redes móveis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF13 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/navicg">Ana Victória</a>, 2025.</em></p>
+<h3 id="rnf14">RNF14</h3>
+<p><strong>Tabela 60 -</strong> Cartão do Requisito RNF14</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Organizacional</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF14</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve garantir proteção de dados pessoais, reforçando a confiança do usuário quanto à privacidade e segurança</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF14 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf15">RNF15</h3>
+<p><strong>Tabela 61 -</strong> Cartão do Requisito RNF15</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF15</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve melhorar a performance do processo de login, permitindo uma experiência mais fluida</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF15 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf16">RNF16</h3>
+<p><strong>Tabela 62 -</strong> Cartão do Requisito RNF16</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF16</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve considerar a usabilidade para usuários idosos, garantindo que o design e as funcionalidades sejam facilmente compreensíveis e acessíveis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF16 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/KarolineLuz">Karoline Luz</a>, 2025.</em></p>
+<h3 id="rnf17">RNF17</h3>
+<p><strong>Tabela 63 -</strong> Cartão do Requisito RNF17</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF17</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN07</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT19</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve fornecer suporte para acessibilidade, incluindo recursos para daltônicos e deficientes visuais</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF17 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN07</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT19</a>: O requisito originou-se da entrevista e introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf18">RNF18</h3>
+<p><strong>Tabela 64 -</strong> Cartão do Requisito RNF18</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF18</a>, <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ter uma aparência profissional e confiável para transmitir segurança aos usuários</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF18 - <a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a>: O requisito originou-se da entrevista</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf19">RNF19</h3>
+<p><strong>Tabela 65 -</strong> Cartão do Requisito RNF19</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF19</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT15</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ser compatível com as versões mais recentes dos sistemas Android e iOS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF19 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT15</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf20">RNF20</h3>
+<p><strong>Tabela 66 -</strong> Cartão do Requisito RNF20</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF20</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT16</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">As funcionalidades principais devem responder em, no máximo, dois segundos para garantir boa experiência</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF20 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT16</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025.</em></p>
+<h3 id="rnf21">RNF21</h3>
+<p><strong>Tabela 67 -</strong> Cartão do Requisito RNF21</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF21</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT17</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">A interface deve ser simples, objetiva e utilizar linguagem acessível a usuários com diferentes níveis de escolaridade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF21 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT17</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf22">RNF22</h3>
+<p><strong>Tabela 68 -</strong> Cartão do Requisito RNF22</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Organizacional</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF22</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT18</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve proteger as informações pessoais com criptografia de dados e autenticação segura</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF22 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT18</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h3 id="rnf23">RNF23</h3>
+<p><strong>Tabela 69 -</strong> Cartão do Requisito RNF23</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF23</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT20</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve funcionar em modo offline para consulta de registros ou informações previamente acessadas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF23 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT20</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Não</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025.</em></p>
+<h3 id="rnf24">RNF24</h3>
+<p><strong>Tabela 70 -</strong> Cartão do Requisito RNF24</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Categoria:</strong></td>
+<td style="text-align: left;">Desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/req_elicitados/#anchor_RNF">RNF24</a>, <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT21</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">As imagens capturadas pelo usuário devem ser otimizadas para upload rápido mesmo em conexões móveis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RNF24 - <a href="../../elicitacao/tec_elicitacao/introspeccao/#anchor_INT">INT21</a>: O requisito originou-se da introspecção</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Implementação:</strong></td>
+<td style="text-align: left;">Sim</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025.</em></p>
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<blockquote>
+<p><a id="citacao-elo1" href="#RP1">[1]</a> SAYÃO, Miriam; LEITE, Julio. Rastreabilidade de Requisitos. PUC-Rio: Departamento de Informática, ISSN 0103-9741, Rio de Janeiro, 2005. Disponível em: <a href="https://www-di.inf.puc-rio.br/~julio/rastre.pdf">https://www-di.inf.puc-rio.br/~julio/rastre.pdf</a>. Acesso em: 07 jun. 2025.</p>
+<p><a id="citacao-elo2" href="#RP2">[2]</a> SERRANO, Milene, SERRANO, Maurício. Requisitos - Aula sobre Rastreabilidade. UnB Gama, Brasília, 2023.</p>
+</blockquote>
+<div align="center"><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo2.png" alt="Fonte Elo 2 - Backward-from"></a></div>
+
+<blockquote>
+<p><a id="citacao-elo3" href="#RP3">[3]</a> SERRANO, Milene, SERRANO, Maurício. Requisitos (Aula 26): Elicitação, Modelagem e Análise. UnB Gama, Brasília, 2023. Disponível em: <a href="https://aprender3.unb.br/pluginfile.php/3096178/mod_resource/content/1/Requisitos%20-%20Aula%20026.pdf">link</a>. Acesso em: 07 jun. 2025.</p>
+<p><a id="citacao-elo4" href="#RP4">[4]</a> SERRANO, Milene, SERRANO, Maurício. Requisitos - Tipos de Elos. UnB Gama, Brasília, 2023.</p>
+</blockquote>
+<div align="center"><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo4.png" alt="Fonte Elo 4 - Tipos de Elos"></a></div>
+
+<blockquote>
+<p><a id="citacao-elo5" href="#RP5">[5]</a> SERRANO, Milene, SERRANO, Maurício. Requisitos - Tipos de Elos. UnB Gama, Brasília, 2023.</p>
+</blockquote>
+<div align="center"><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/backward/docs/assets/fonte-elo5.png" alt="Fonte Elo 5 - Tipos de Elos"></a></div>
+
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p>SAYÃO, Miriam; LEITE, Julio. Rastreabilidade de Requisitos. PUC-Rio: Departamento de Informática, ISSN 0103-9741, Rio de Janeiro, 2005. Disponível em: <a href="https://www-di.inf.puc-rio.br/~julio/rastre.pdf">https://www-di.inf.puc-rio.br/~julio/rastre.pdf</a>. Acesso em: 07 jun. 2025.</p>
+<p>WIEGERS, Karl; BEATTY, Joy. Software Requirements. 3. ed. Redmond: Microsoft Press, 2013. Disponível em: <a href="https://www.booksfree.org/wp-content/uploads/2022/03/Software_Requirements_3rd_Edition_compressed.pdf">https://www.booksfree.org/wp-content/uploads/2022/03/Software_Requirements_3rd_Edition_compressed.pdf</a>. Acesso em: 07 jun. 2025.</p>
+</blockquote>
+<h2 id="historico-de-versao">Histórico de Versão</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor(es)</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Revisor(es)</th>
+<th style="text-align: center;">Data de revisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação da página e adicionando os cartões dos requisitos</td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">07/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td style="text-align: center;">07/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Adição de novas referências bibliográficas e correção de hyperlinks</td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.5</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.6</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/navicg">Ana Victória</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.7</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.8</td>
+<td style="text-align: center;">Criação dos Cartões de Relacionamento dos Elos</td>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -1,0 +1,6791 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../especificacao_suplementar/">
+      
+      
+        <link rel="next" href="../backlog/">
+      
+      
+      <link rel="icon" href="../../../assets/egdf_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>NFR Framework - e-GDF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nfr-framework" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="e-GDF" class="md-header__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            e-GDF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NFR Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="e-GDF" class="md-nav__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    e-GDF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacoes/apresentacao5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata_inspecao1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata da inspeção da entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/aplicativos_selecionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/app_selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heat Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/termos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Termo de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/analise_documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise de Documentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_elicitacao/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moscow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/roi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/tec_priorizacao/100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/req_elicitados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/perfil_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softgoal-interdependency-graph-sig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softgoal Interdependency Graph (SIG)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Softgoal Interdependency Graph (SIG)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-softgoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Softgoal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interdependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interdependências
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interdependências">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decomposicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuições
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedimento-de-avaliacao-no-nfr-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimento de Avaliação no NFR Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedimento de Avaliação no NFR Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-rotulos-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de rótulos usados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização MoSCoW
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização MoSCoW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aplicacao-no-nfr-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicação no NFR Framework
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Não Funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taxonomia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-especificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Especificação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr01-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR01: Segurança
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-lgpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à LGPD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-1-tabela-de-impactos-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 1: Tabela de Impactos - Segurança
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr02-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR02: Usabilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-2-tabela-de-impactos-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 2: Tabela de Impactos - Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr03-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR03: Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propagação dos Impactos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-3-tabela-de-impactos-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 3: Tabela de Impactos - Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-4-tabela-de-impactos-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 4: Tabela de Impactos - Desempenho
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr05-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR05: Confiabilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Confiabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-do-sig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise do SIG
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise do SIG">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#softgoals-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softgoals identificados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operacionalizacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operacionalizações:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuicoes-entre-softgoals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuições entre softgoals:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise dos Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-moscow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-com-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação com Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-compilado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama compilado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../historia-de-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matriz_rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/forward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/backward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../validacao/prototipacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototipação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../validacao/comprovacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega-final
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega-final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/aplicativo-selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/artefatos-criados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/execucao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/ferramentas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docs/entrega-final/resultados-alcancados.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/tabela-apresentacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabela de Apresentações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/tecnicas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/panejamento-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/verificacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/validacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entrega-final/consideracoes-finais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Considerações Finais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/avaliacao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliação -1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega01/entrega01grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega02/entrega02grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega03/entrega03grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega04/entrega04grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega05/entrega05grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega06/entrega06grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega01/entrega01grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega02/entrega02grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega03/entrega03grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega04/entrega04grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega05/entrega05grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/grupo/entrega06/entrega06grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_1_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_2_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_3_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_4_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_6_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_5_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_1_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_2_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_3_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_4_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_6_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../inspecao/inspecao_5_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softgoal-interdependency-graph-sig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softgoal Interdependency Graph (SIG)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Softgoal Interdependency Graph (SIG)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-softgoal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Softgoal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interdependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interdependências
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interdependências">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decomposicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuições
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedimento-de-avaliacao-no-nfr-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimento de Avaliação no NFR Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedimento de Avaliação no NFR Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-rotulos-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de rótulos usados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização MoSCoW
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização MoSCoW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aplicacao-no-nfr-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicação no NFR Framework
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-nao-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Não Funcionais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taxonomia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartoes-de-especificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Especificação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr01-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR01: Segurança
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-lgpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à LGPD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-1-tabela-de-impactos-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 1: Tabela de Impactos - Segurança
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr02-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR02: Usabilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-2-tabela-de-impactos-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 2: Tabela de Impactos - Usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr03-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR03: Acessibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propagação dos Impactos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-3-tabela-de-impactos-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 3: Tabela de Impactos - Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Termo de consentimento de imagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabela-4-tabela-de-impactos-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela 4: Tabela de Impactos - Desempenho
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfr05-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFR05: Confiabilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabela-de-requisitos-relacionados-a-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Requisitos Relacionados à Confiabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-do-sig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise do SIG
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise do SIG">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#softgoals-identificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softgoals identificados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operacionalizacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operacionalizações:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribuicoes-entre-softgoals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribuições entre softgoals:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagacao-dos-impactos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagação dos Impactos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise dos Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-moscow_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validacao-com-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validação com Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#termo-de-consentimento-de-imagem_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Termo de consentimento de imagem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-compilado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama compilado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="nfr-framework">NFR Framework</h1>
+<h2 id="introducao">Introdução</h2>
+<p>O <strong>NFR Framework</strong> é uma abordagem para representar e analisar <a href="../../../elicitacao/req_elicitados/">Requisitos Não-Funcionais</a>, oferecendo uma estrutura formal para armazenar tanto o desenho quanto o racional por trás do processo de design de requisitos. Seu objetivo é auxiliar desenvolvedores na implementação de soluções personalizadas, considerando:</p>
+<ul>
+<li>Características do domínio e do sistema em questão;</li>
+<li>Requisitos funcionais e não-funcionais;</li>
+<li>Prioridades e carga de trabalho.</li>
+</ul>
+<p>Esses fatores determinam a escolha das alternativas de desenvolvimento mais adequadas para cada sistema. Para isso, o framework utiliza grafos chamados <strong>Softgoal Interdependency Graphs (SIGs)</strong>, nos quais os <em>softgoals</em> representam objetivos abstratos de satisfação imprecisa.<a id="anchor_1" href="#REF1">[1]</a></p>
+<h2 id="softgoal-interdependency-graph-sig">Softgoal Interdependency Graph (SIG)</h2>
+<p>O <strong>Softgoal Interdependency Graph (SIG)</strong> é uma ferramenta gráfica utilizada pelo <em>NFR Framework</em> para representar decisões de projeto relacionadas a <em>softgoals</em> — objetivos com critérios de satisfação vagos ou imprecisos. Cada nó do grafo representa um <em>softgoal</em>, enquanto as arestas indicam relações de decomposição ou de contribuição entre eles. <a id="anchor_1" href="#REF1">[1]</a></p>
+<h3 id="tipos-de-softgoal">Tipos de Softgoal</h3>
+<p>Para compreender o funcionamento do SIG, é essencial entender os diferentes tipos de <em>softgoal</em>:</p>
+<ol>
+<li>
+<p><strong>Softgoals NFR</strong><br />
+   Representam diretamente os Requisitos Não-Funcionais. São organizados hierarquicamente e agrupados em catálogos temáticos (como desempenho, segurança, usabilidade, etc.).</p>
+</li>
+<li>
+<p><strong>Softgoals de Operacionalização</strong><br />
+   Correspondem a soluções concretas (operações, processos, estruturas de dados, restrições) que visam satisfazer <em>softgoals</em> NFR ou outros de operacionalização.</p>
+</li>
+<li>
+<p><strong>Softgoals de Afirmação</strong><br />
+   São registros em linguagem natural que expressam justificativas de projeto ou fatores do domínio, como carga de trabalho, decisões de priorização e contexto organizacional.</p>
+</li>
+</ol>
+<p>A figura 1 mostra a representação dos tipos de <em>softgoals</em> que estão presentes em um NRF Framework:</p>
+<p align="center"><i>Figura 1: Tipos das Softgoals</i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tipos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tipos.png" width="600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: (SILVA, 2019)</p></font></p>
+<h3 id="interdependencias">Interdependências</h3>
+<p>As interdependências no SIG definem as associações entre os <em>softgoals</em> e se dividem em dois tipos principais:</p>
+<h4 id="decomposicoes">Decomposições</h4>
+<p>A decomposição permite subdividir <em>softgoals</em> em objetivos mais específicos, facilitando a análise e a priorização. Pode ocorrer em todos os tipos de <em>softgoal</em>:</p>
+<ul>
+<li><strong>NFR</strong>: Fragmenta objetivos amplos em partes menores, reduzindo ambiguidades.</li>
+<li><strong>Operacionalização</strong>: Refina uma solução geral em alternativas específicas.</li>
+<li><strong>Afirmação</strong>: Serve para afirmar ou refutar justificativas de projeto.</li>
+<li><strong>Priorização</strong>: Permite atribuir diferentes níveis de prioridade entre <em>softgoals</em> do mesmo tipo.</li>
+</ul>
+<p>A figura 2 ilustra essas diferentes formas de decomposição dentro do NFR Framework:</p>
+<p align="center"><i>Figura 2: Tipos de Decomposição das Softgoals</i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tabela2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tabela2.png" width="600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: (SILVA, 2019)</p></font></p>
+<h4 id="contribuicoes">Contribuições</h4>
+<p>Contribuições indicam como um <em>softgoal</em> impacta outro. Podem ser:</p>
+<ul>
+<li><strong>AND</strong>: Todos os derivados devem ser satisfeitos para satisfazer o <em>softgoal</em> principal.</li>
+<li><strong>OR</strong>: A satisfação de ao menos um derivado é suficiente.</li>
+<li><strong>MAKE (++):</strong> Contribuição totalmente positiva.</li>
+<li><strong>BREAK (--):</strong> Contribuição totalmente negativa.</li>
+<li><strong>HELP (+):</strong> Contribuição levemente positiva.</li>
+<li><strong>HURT (-):</strong> Contribuição levemente negativa.</li>
+<li><strong>UNKNOWN (?)</strong>: Contribuição desconhecida.</li>
+<li><strong>EQUALS</strong>: Correlação direta entre os níveis de satisfação.</li>
+<li><strong>SOME</strong>: A contribuição é conhecida, mas sua intensidade é incerta. <a id="anchor_2" href="#REF2">[2]</a></li>
+</ul>
+<h2 id="procedimento-de-avaliacao-no-nfr-framework">Procedimento de Avaliação no NFR Framework</h2>
+<p>O <strong>procedimento de avaliação</strong> determina o grau em que os requisitos não funcionais (softgoals) são satisfeitos por um conjunto de decisões. Dessa forma, ele verifica se cada softgoal ou interdependência do Softgoal Interdependency Graph (SIG) foi suficientemente atendido.<a id="anchor_2" href="#REF2">[2]</a></p>
+<h3 id="tipos-de-rotulos-usados">Tipos de rótulos usados</h3>
+<ul>
+<li>✓ <strong>Satisfeito</strong>: O requisito não funcional é plenamente satisfeito.</li>
+<li>𝒲+ <strong>Fracamente satisfeito</strong>: Satisfação parcial; impacto positivo, mas menos forte que ✓.</li>
+<li>X <strong>Negado</strong>: O requisito não é satisfeito e pode até contradizer os objetivos do sistema.</li>
+<li>𝒲- <strong>Fracamente negado</strong>: Negação parcial; impacto negativo, mas mais brando que X.</li>
+<li>🗲 <strong>Conflitante</strong>: Há conflitos entre requisitos; coexistem aspectos positivos e negativos.</li>
+<li>u <strong>Indeterminado</strong>: Não há dados suficientes para determinar o impacto entre os requisitos.</li>
+</ul>
+<p align="center"><i>Figura 3: Tipos de rótulos utilizados pelos softgoals</i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tabela3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/tabela3.png" width="600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: (SILVA, 2019)</p></font></p>
+<p align="center"><b>Tabela</b> — Histórico de Contribuições</p>
+
+<table>
+<thead>
+<tr>
+<th>O que foi feito</th>
+<th>Autor(es)</th>
+<th>Data de Criação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adição das tabela modelo de RNF</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição das tabela modelo Cartão de Especificação</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição de tabela Segurança</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição de tabela Usabilidade</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição de tabela Desempenho</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição de tabela Responsividade</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>28/05/2025</td>
+</tr>
+<tr>
+<td>Adição de tabela Confiabilidade</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+<td>28/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<h2 id="priorizacao-moscow">Priorização MoSCoW</h2>
+<p>Para organizar e definir a importância relativa dos requisitos não-funcionais identificados, este projeto utiliza a técnica de priorização <a href="../../../elicitacao/tec_priorizacao/moscow/"><strong>MoSCoW</strong></a>.</p>
+<p>O método <strong>MoSCoW</strong> categoriza os requisitos em quatro grupos principais:</p>
+<ul>
+<li><strong>Must have (M)</strong> → Essenciais para o sucesso do sistema. Sem eles, o projeto falha.</li>
+<li><strong>Should have (S)</strong> → Importantes, mas não críticos. Sua ausência pode ser contornada temporariamente.</li>
+<li><strong>Could have (C)</strong> → Desejáveis, porém opcionais. Podem ser incluídos se houver tempo e recursos.</li>
+<li><strong>Won’t have this time (W)</strong> → Fora do escopo atual. Requisitos que foram deliberadamente deixados para versões futuras.</li>
+</ul>
+<h3 id="aplicacao-no-nfr-framework">Aplicação no NFR Framework</h3>
+<p>No contexto deste projeto, a priorização <strong>MoSCoW</strong> será usada para:</p>
+<ol>
+<li><strong>Atribuir prioridades aos softgoals NFR e aos requisitos relacionados</strong>, complementando os valores numéricos de prioridade já indicados nos cartões de especificação.</li>
+<li><strong>Guiar decisões de implementação</strong>, ajudando a equipe a entender quais requisitos não-funcionais são indispensáveis, quais podem ser adiados e quais são opcionais.</li>
+<li><strong>Registrar as decisões nos Softgoal Interdependency Graphs (SIGs)</strong>, utilizando as tags <strong>M / S / C / W</strong> nos nós e/ou nas legendas, para manter rastreabilidade visual das prioridades.</li>
+</ol>
+<p>Essa priorização também será documentada nas tabelas de especificação, adicionando uma coluna e a anotação que indique a categoria <strong>MoSCoW</strong> de cada requisito.</p>
+<h2 id="metodologia">Metodologia</h2>
+<ol>
+<li>Definição dos temas principais: Usabilidade, Desempenho, Segurança, Acessibilidade, Confiabilidade.</li>
+<li>Modelagem com o NFR Framework, representando os requisitos não funcionais como softgoals.</li>
+<li>Construção dos Softgoal Interdependency Graphs (SIGs) no Draw.io para cada tema.</li>
+<li>Análise de contribuições e conflitos entre softgoals (por exemplo: trade-offs entre desempenho e segurança).</li>
+<li>Aplicação do procedimento de avaliação, atribuindo rótulos como satisfeito, fracamente satisfeito, negado, fracamente negado, conflitante ou indeterminado para cada softgoal.</li>
+<li>Validação final com revisão bibliográfica e feedback da equipe, garantindo alinhamento com o estado da arte.</li>
+</ol>
+<h2 id="tabela-de-requisitos-nao-funcionais">Tabela de Requisitos Não Funcionais</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Rastreabilidade</th>
+<th>Implementado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td>O sistema deve ser compatível com vários dispositivos como Android e iOS.</td>
+<td><a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD).</td>
+<td><a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>O sistema deve possuir uma interface simples, limpa e com ícones ilustrativos</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN01</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>O aplicativo deve permitir acessibilidade para pessoas idosas ou com deficiência visual</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN02</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF05</td>
+<td>O sistema deve funcionar mesmo em dispositivos com baixa capacidade de hardware</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN04</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF06</td>
+<td>A navegação deve ser rápida e fluida entre telas, sem necessidade de redirecionamentos excessivos</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN05</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF07</td>
+<td>O sistema deve carregar as informações de forma otimizada, reduzindo tempo de resposta</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN06</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td>O layout deve ser responsivo para diferentes tamanhos de tela</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN07</a>, <a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT22</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF09</td>
+<td>O sistema deve ter compatibilidade com leitores de tela</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN08</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF10</td>
+<td>O app deve conter linguagem clara e acessível, adequada a diferentes níveis de escolaridade</td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN09</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF11</td>
+<td>O aplicativo deve ser mais autoexplicativo, com uma navegação intuitiva e menos dependência de redirecionamentos externos.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN01</a> <a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD11</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF12</td>
+<td>O aplicativo deve garantir que as informações exibidas sejam atualizadas e reflitam fielmente a realidade, especialmente em saúde e educação.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF13</td>
+<td>O aplicativo deve apresentar estabilidade, evitando travamentos ou falhas de carregamento, especialmente em redes móveis.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF14</td>
+<td>O aplicativo deve garantir proteção de dados pessoais, reforçando a confiança do usuário quanto à privacidade e segurança.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF15</td>
+<td>O aplicativo deve melhorar a performance do processo de login, permitindo uma experiência mais fluida.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF16</td>
+<td>O aplicativo deve considerar a usabilidade para usuários idosos, garantindo que o design e as funcionalidades sejam acessíveis.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN06</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF17</td>
+<td>O aplicativo deve fornecer suporte para acessibilidade, incluindo recursos para daltônicos e deficientes visuais.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN07</a>, <a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT19</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF18</td>
+<td>O aplicativo deve ter uma aparência profissional e confiável para transmitir segurança aos usuários.</td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF19</td>
+<td>O aplicativo deve ser compatível com as versões mais recentes dos sistemas Android e iOS.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT15</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF20</td>
+<td>As funcionalidades principais devem responder em, no máximo, dois segundos para garantir boa experiência.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT16</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF21</td>
+<td>A interface deve ser simples, objetiva e utilizar linguagem acessível a usuários com diferentes níveis de escolaridade.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT17</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF22</td>
+<td>O sistema deve proteger as informações pessoais com criptografia de dados e autenticação segura.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT18</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF23</td>
+<td>Deve funcionar em modo offline para consulta de registros ou informações previamente acessadas.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT20</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF24</td>
+<td>As imagens capturadas pelo usuário devem ser otimizadas para upload rápido mesmo em conexões móveis.</td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT21</a></td>
+<td>Sim</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores ( <a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<h2 id="taxonomia">Taxonomia</h2>
+<p>A taxonomia é um esquema de classificação que organiza termos e suas relações no contexto de uma área de conhecimento. Segundo Usman et al. (2017), <strong>“taxonomias contribuem para amadurecer um campo de conhecimento, permitindo descrever seus elementos e evoluindo ao longo do tempo ao incorporar novos conhecimentos”</strong><a id="anchor_2" href="#REF2">[2]</a>.</p>
+<p align="center"><b>Tabela</b> — Taxonomia</p>
+
+<table>
+<thead>
+<tr>
+<th>Softgoal</th>
+<th>RNFs Relacionados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Segurança</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF02</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF14</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF22</a></td>
+</tr>
+<tr>
+<td><em>Usabilidade</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF03</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF10</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF11</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF16</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF21</a></td>
+</tr>
+<tr>
+<td><em>Acessibilidade</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF04</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF09</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF17</a></td>
+</tr>
+<tr>
+<td><em>Desempenho</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF06</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF07</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF13</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF15</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF20</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF24</a></td>
+</tr>
+<tr>
+<td><em>Confiabilidade</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF01</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF08</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF12</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF18</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF19</a>, <a href="/elicitacao/req_elicitados/#anchor_RF">RNF23</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores ( <a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<p>A taxonomia apresentada nesta tabela organiza os Softgoals (objetivos de qualidade não-funcionais) do sistema e relaciona cada um com os Requisitos Não-Funcionais correspondentes. Essa classificação ajuda a estruturar os critérios que devem ser atendidos para garantir aspectos importantes do software, como compatibilidade, segurança, usabilidade, acessibilidade, desempenho, entre outros.</p>
+<hr />
+<h2 id="cartoes-de-especificacao">Cartões de Especificação</h2>
+<p>Os cartões de especificação a seguir, Tabelas de 1 a 10, foram utilizados para definir os Requisitos Não-Funcionais a serem utilizados na confecção dos NFR Frameworks.<a id="anchor_2" href="#REF2">[2]</a></p>
+<p align="center"><b>Tabela 1</b> — Cartão de Especificação modelo</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td>Um número sequencial</td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Classificação do RNF conforme taxonomia</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>Declaração única do significado do requisito</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Justificativa sobre a criação do requisito</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td>Origem do requisito (stakeholder, norma, etc.)</td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Métrica do requisito que possa ser testada e validada</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>Requisitos relacionados e estruturas dependentes</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td>Categoria de prioridade: <strong>M</strong> (Must have), <strong>S</strong> (Should have), <strong>C</strong> (Could have), <strong>W</strong> (Won’t have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Requisitos conflitantes com este</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Data de criação e de modificação</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores ( <a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 2</b> — Cartão de Especificação 2</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF02</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Segurança</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD).</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garantir a proteção legal dos dados pessoais dos usuários e evitar penalidades legais.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD10</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>O sistema deve demonstrar conformidade com os princípios e obrigações da LGPD em auditorias.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF14 (Proteção de dados), RNF22 (Autenticação segura).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir ajustes em funcionalidades para reduzir coleta ou armazenamento de dados.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 3</b> — Cartão de Especificação 3</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF14</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Segurança</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve garantir proteção de dados pessoais, reforçando a confiança do usuário quanto à privacidade.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>A proteção de dados é essencial para manter a confiança dos usuários e evitar vazamentos ou ataques.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN04</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Implementação de criptografia em repouso e em trânsito, políticas de acesso restrito e logs de auditoria.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF02 (Conformidade LGPD), RNF22 (Autenticação segura), RNF15 (Performance de login).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode impactar a performance do sistema, especialmente no processo de login e acesso a dados sensíveis.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 4</b> — Cartão de Especificação 4</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF22</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Segurança</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve usar autenticação segura, preferencialmente integrada ao gov.br, para proteger o acesso.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Autenticação robusta é necessária para evitar acessos não autorizados e fraudes.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT18</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Implementação de autenticação integrada ao gov.br, uso de protocolos seguros (OAuth, SAML) e logs de acesso.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF14 (Proteção de dados), RNF15 (Performance de login).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode aumentar a complexidade de implementação e gerar impacto na experiência do usuário (tempo de login).</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<h2 id="nfr01-seguranca">NFR01: Segurança</h2>
+<p>Este SIG (Softgoal Interdependency Graph) foi elaborado com base nos requisitos não funcionais relacionados à segurança do sistema no que tange ao dados. A segurança é responsável por garantir que os dados do usuário e de todas as partes envolvidas no uso do sistema tenham uma camada de proteção contra a exposição indesejada das suas informações.</p>
+<h2 id="requisitos">Requisitos:</h2>
+<p>Requisitos utilizados para desenvolver o SIG da Figura 4:</p>
+<h3 id="tabela-de-requisitos-relacionados-a-lgpd">Tabela de Requisitos Relacionados à LGPD</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Código</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF02</td>
+<td>O sistema deve estar em conformidade com a Lei Geral de Proteção de Dados (LGPD).</td>
+</tr>
+<tr>
+<td>RNF14</td>
+<td>O aplicativo deve garantir proteção de dados pessoais, reforçando a confiança do usuário quanto à privacidade e segurança.</td>
+</tr>
+<tr>
+<td>RNF22</td>
+<td>O sistema deve proteger as informações pessoais com criptografia de dados e autenticação segura.</td>
+</tr>
+</tbody>
+</table>
+<p align="center"><i>Figura 4: SIG: Segurança </i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://i.ibb.co/Hf9MwG4L/image.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://i.ibb.co/Hf9MwG4L/image.png" width="600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<h3 id="propagacao-dos-impactos">Propagação dos Impactos</h3>
+<p>A Tabela 1, apresentada a seguir, mostra a avaliação da propagação dos impactos representados na imagem acima.</p>
+<h3 id="tabela-1-tabela-de-impactos-seguranca">Tabela 1: Tabela de Impactos - Segurança</h3>
+<table>
+<thead>
+<tr>
+<th><em>NFR</em></th>
+<th><em>Impacto</em></th>
+<th><em>Avaliador</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conformidade com a LGPD</td>
+<td>✔</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td>Proteção de dados</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td>Autenticar de forma segura</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td>Criptografar dados</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+<tr>
+<td>Satisfação do usuário</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/JJOAOMARCOSS">João Marcos</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, 2025)</p></font></p>
+<hr />
+<p><strong>Vídeo 1</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/xOqd3H6dOds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/xOqd3H6dOds" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<h2 id="termo-de-consentimento-de-imagem">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a cidadã Nívea Cecília forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="../../../assets/termo-img/Assinatura%20Nivea%20.pdf">PDF</a></p>
+<p><strong>Vídeo 1 - 2.0</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/N9fbh0srbYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/xOqd3H6dOds" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<h2 id="termo-de-consentimento-de-imagem_1">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a cidadã Nívea Cecília forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1Vx3nkS_CSteiuCCOe2M4GVtsV7QjfV8V/view?usp=share_link">PDF</a></p>
+<p><strong>Vídeo 2</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/yuTljJG5Xr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/yuTljJG5Xr8" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<h2 id="termo-de-consentimento-de-imagem_2">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão Gabriel Souza forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="../../../assets/termo-img/Termo-Gabriel-Souza.pdf">PDF</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Nome</strong></th>
+<th style="text-align: center;"><strong>Função</strong></th>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Hora</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td style="text-align: center;">Elaborador dos NFR</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">14:30</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td style="text-align: center;">Elaborador dos NFR</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">12:30</td>
+</tr>
+<tr>
+<td style="text-align: center;">Nívea Cecília</td>
+<td style="text-align: center;">Cidadã</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">14:30</td>
+</tr>
+<tr>
+<td style="text-align: center;">Gabriel Souza</td>
+<td style="text-align: center;">Cidadão</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">12:30</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p align="center"><b>Tabela 5</b> — Cartão de Especificação 5</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF03&lt; a&gt;</td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Usabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve possuir uma interface simples, limpa e com ícones ilustrativos.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Reduzir a carga visual, facilitando a identificação de funcionalidades e melhorando a experiência do usuário.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td>brainstorming.</td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Pelo menos 90% dos usuários, com no mínimo 10 participantes, devem conseguir localizar as funcionalidades desejadas sem ajuda externa, e num período de 20 segundos por tarefa.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF10 (linguagem clara), RNF11 (navegação intuitiva).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Risco de omitir informações importantes, tornando a interface minimalista demais.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 6</b> — Cartão de Especificação 6</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF11</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Usabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve ser mais autoexplicativo, com uma navegação intuitiva e menos dependência de redirecionamentos externos.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Facilita o uso do sistema por usuários com diferentes níveis de familiaridade tecnológica.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td>Análise de documentos e entrevista.</td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Uso da heurística de Nielsen "Consistência e padronização". Testes serão feitos com no mínimo 5 usuários. Se forem identificados mais que 3 desvios dessa heurística que causem confusão, o requisito não está atendido.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF06 (navegação rápida)</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Reduzir redirecionamentos vai fazer com que possa ter sobrecarga de informações em uma tela.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 7</b> — Cartão de Especificação 7</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF16</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Usabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve considerar a usabilidade para usuários idosos, garantindo que o design e as funcionalidades sejam acessíveis.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Promove inclusão digital e amplia o alcance do sistema, facilitando o uso para uma parcela significativa da população</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td>Entrevista.</td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Avaliação com grupo de usuários idosos, buscando pelo menos 80% de aprovação em testes de usabilidade focados em legibilidade, navegação e tamanho de elementos.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF03 (interface simples e limpa)</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Reduzir redirecionamentos vai fazer com que possa ter sobrecarga de informações em uma tela.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 8</b> — Cartão de Especificação 8</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF21</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Usabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>A interface deve ser simples, objetiva e utilizar linguagem acessível a usuários com diferentes níveis de escolaridade.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Facilita a compreensão das funcionalidades, reduzindo a curva de aprendizado e o risco de abandono por parte dos usuários.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td>Introspecção.</td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Em teste com usuários, pelo menos 90% devem conseguir realizar tarefas básicas (ex: cadastro, consulta, envio de dados) sem ajuda externa ou leitura de instruções externas.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF11 (navegação intuitiva).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Dados podem exigir terminologia mais complexa</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<hr />
+<h2 id="nfr02-usabilidade">NFR02: Usabilidade</h2>
+<p>Este Softgoal Interdependency Graph (SIG) foi elaborado para representar visualmente os aspectos relacionados à usabilidade no sistema FGTS. Ele demonstra como certos requisitos não funcionais influenciam positivamente ou negativamente esse atributo de qualidade.</p>
+<h2 id="requisitos_1">Requisitos:</h2>
+<p>Requisitos utilizados para desenvolver o SIG da Figura 5:</p>
+<h3 id="tabela-de-requisitos-relacionados-a-usabilidade">Tabela de Requisitos Relacionados à Usabilidade</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Código</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF03</td>
+<td>O sistema deve possuir uma interface simples, limpa e com ícones ilustrativos.</td>
+</tr>
+<tr>
+<td>RNF11</td>
+<td>O aplicativo deve ser mais autoexplicativo, com uma navegação intuitiva e menos dependência de redirecionamentos externos.</td>
+</tr>
+<tr>
+<td>RNF16</td>
+<td>O aplicativo deve considerar a usabilidade para usuários idosos, garantindo que o design e as funcionalidades sejam acessíveis.</td>
+</tr>
+<tr>
+<td>RNF21</td>
+<td>A interface deve ser simples, objetiva e utilizar linguagem acessível a usuários com diferentes níveis de escolaridade.</td>
+</tr>
+</tbody>
+</table>
+<p align="center"><i>Figura 5: SIG: Usabilidade </i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/Usabilidade.drawio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/Usabilidade.drawio.png"600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<h3 id="propagacao-dos-impactos_1">Propagação dos Impactos</h3>
+<p>A Tabela 2, apresentada a seguir, mostra a avaliação da propagação dos impactos representados na imagem acima.</p>
+<h3 id="tabela-2-tabela-de-impactos-usabilidade">Tabela 2: Tabela de Impactos - Usabilidade</h3>
+<table>
+<thead>
+<tr>
+<th><em>NFR</em></th>
+<th><em>Impacto</em></th>
+<th><em>Avaliador</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interface limpa</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Usar linguagem acessível</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Implementar design simples</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Acessibilidade</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Navegação</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Navegação intuitiva</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Redirecionamento externos</td>
+<td>𝒲</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Interface intuitiva</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td>✔</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, 2025)</p></font></p>
+<p><strong>Vídeo 3</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/wxBJ2hGhygs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtube.com/wxBJ2hGhygs" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Nome</strong></th>
+<th style="text-align: center;"><strong>Função</strong></th>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Hora</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td style="text-align: center;">Elaborador dos NFR</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">18:30</td>
+</tr>
+<tr>
+<td style="text-align: center;">Gabriel Lima</td>
+<td style="text-align: center;">Usuário</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">18:30</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p align="center"><b>Tabela 9</b> — Cartão de Especificação 9</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF04</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Acessibilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve permitir acessibilidade para pessoas idosas ou com deficiência visual.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garante que o sistema seja inclusivo para públicos com diferentes necessidades e limitações físicas.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN02</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes mostrando compatibilidade com recursos de acessibilidade do sistema operacional, como ajustes de tamanho e contraste.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF03 (Interface intuitiva), RNF11 (Linguagem acessível).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir ajustes adicionais no design visual e maior atenção em testes especializados.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 10</b> — Cartão de Especificação 10</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF09</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Acessibilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve ter compatibilidade com leitores de tela para atender usuários com deficiência visual.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Permite o uso do sistema por usuários cegos ou com baixa visão, garantindo acesso à informação.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN08</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes com leitores de tela como TalkBack (Android) e VoiceOver (iOS), garantindo leitura correta dos elementos e fluxos.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF03 (Interface intuitiva), RNF11 (Linguagem acessível).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode limitar certas escolhas visuais, exigindo atenção na marcação semântica e descrição de imagens.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 11</b> — Cartão de Especificação 11</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF17</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Acessibilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve fornecer suporte para daltônicos e outros tipos de deficiência visual.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Assegura que os elementos visuais sejam acessíveis a diferentes tipos de deficiência, ampliando o público-alvo do sistema.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN07</a>, <a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT19</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes de contraste, inclusão de ícones não baseados apenas em cor, e modos de exibição adaptados.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF03 (Interface intuitiva), RNF11 (Linguagem acessível).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir ajustes detalhados no design de cores, contrastes e elementos gráficos.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a>, 2025)</p></font></p>
+<hr />
+<h2 id="nfr03-acessibilidade">NFR03: Acessibilidade</h2>
+<p>Este SIG (Softgoal Interdependency Graph) foi elaborado a partir de requisitos não funcionais relacionados à acessibilidade do sistema. Esses requisitos garantem que o aplicativo seja inclusivo e acessível a todos os usuários, incluindo aqueles com deficiências visuais, auditivas ou motoras.</p>
+<h2 id="requisitos_2">Requisitos:</h2>
+<p>Requisitos utilizados para desenvolver o SIG da Figura 5:</p>
+<h3 id="tabela-de-requisitos-relacionados-a-acessibilidade">Tabela de Requisitos Relacionados à Acessibilidade</h3>
+<table>
+<thead>
+<tr>
+<th><em>Código</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF04</td>
+<td>O aplicativo deve permitir acessibilidade para pessoas idosas ou com deficiência visual.</td>
+</tr>
+<tr>
+<td>RNF09</td>
+<td>O sistema deve ter compatibilidade com leitores de tela para atender usuários com deficiência visual.</td>
+</tr>
+<tr>
+<td>RNF17</td>
+<td>O aplicativo deve fornecer suporte para daltônicos e outros tipos de deficiência visual.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p align="center"><i>Figura 5: SIG: Acessibilidade </i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/modelagem/nfr/nfr_acessibilidade.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/modelagem/nfr/nfr_acessibilidade.png" width="600"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a>, 2025)</p></font></p>
+<h2 id="propagacao-dos-impactos_2">Propagação dos Impactos</h2>
+<p>A Tabela 3 apresenta a análise dos impactos dos requisitos de acessibilidade.</p>
+<h3 id="tabela-3-tabela-de-impactos-acessibilidade">Tabela 3: Tabela de Impactos - Acessibilidade</h3>
+<table>
+<thead>
+<tr>
+<th>NFR</th>
+<th>Impacto</th>
+<th>Avaliador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acessibilidade</td>
+<td>✔</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Acessibilidade para idosos e deficientes visuais</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Compatibilidade com leitores de tela</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Compatibilidade com TalkBack e VoiceOver</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Ajuste de fonte e contraste automático</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Paleta de cores compatível com daltonismo</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Ícones com formatos diferenciados</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Entrevistas com usuários que relataram falta de acessibilidade</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+</tr>
+<tr>
+<td>Inclusão de usuários PCD aumenta alcance do app</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a> </td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a>, 2025)</p></font></p>
+<p><strong>Vídeo 4</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/Izlb7lYmxLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/Izlb7lYmxLk" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<h2 id="termo-de-consentimento-de-imagem_3">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão João Vitor forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1ByY5FYenlySd8Yn5wnW8HtmIhyFg-c35/view?usp=sharing">PDF</a></p>
+<hr />
+<p><strong>Vídeo 5</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/84UQW38g9vI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/84UQW38g9vI" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<h2 id="termo-de-consentimento-de-imagem_4">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que o cidadão João Vitor forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1ByY5FYenlySd8Yn5wnW8HtmIhyFg-c35/view?usp=sharing">PDF</a></p>
+<hr />
+<p align="center"><b>Tabela 12</b> — Cartão de Especificação 12</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF06</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>A navegação deve ser rápida e fluida entre telas, sem necessidade de redirecionamentos excessivos.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garante que os usuários tenham uma experiência ágil e sem interrupções ao usar o sistema.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN05</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>O tempo de transição entre telas deve ser inferior a dois segundos, sem redirecionamentos desnecessários.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF08 (Responsividade), RNF01 (Compatibilidade).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir otimizações e adaptações específicas para diferentes dispositivos ou plataformas.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 13</b> — Cartão de Especificação 13</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF07</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve carregar as informações de forma otimizada, reduzindo o tempo de resposta.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Minimiza o tempo de espera do usuário, tornando a interação mais eficiente.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN06</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>As principais informações devem ser carregadas em até dois segundos, mesmo sob condições de rede moderadas.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF06 (Navegação fluida), RNF08 (Responsividade).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Otimizações de carregamento podem impactar o consumo de recursos do dispositivo.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 14</b> — Cartão de Especificação 14</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF13</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve apresentar estabilidade, evitando travamentos ou falhas de carregamento, especialmente em redes móveis.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garante que o sistema funcione bem mesmo em condições adversas de conexão, evitando perda de confiança do usuário.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN03</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes de estabilidade mostrando menos de 1% de falhas em redes móveis durante sessões prolongadas.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF05 (Baixo hardware), RNF20 (Tempo de resposta rápido).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Requer testes detalhados e ajustes específicos para diferentes condições de rede.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 15</b> — Cartão de Especificação 15</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF15</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve melhorar a performance do processo de login, permitindo uma experiência mais fluida.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>O login é um ponto crítico da experiência, e sua eficiência impacta diretamente a satisfação do usuário.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN05</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>O login deve ser concluído em menos de três segundos em 90% das tentativas, considerando diferentes tipos de rede.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF22 (Autenticação segura), RNF14 (Proteção de dados).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Melhorar performance pode limitar certos mecanismos de segurança mais robustos.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 16</b> — Cartão de Especificação 16</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF20</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>As funcionalidades principais devem responder em, no máximo, dois segundos para garantir boa experiência.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>A resposta rápida mantém o usuário engajado e reduz a sensação de lentidão no uso do aplicativo.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT16</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Medição de tempo de resposta com limite de dois segundos para as funções críticas.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF07 (Carregamento otimizado), RNF06 (Navegação fluida).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode demandar otimizações agressivas, impactando legibilidade ou modularidade do código.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 17</b> — Cartão de Especificação 17</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF24</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Desempenho</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>As imagens capturadas pelo usuário devem ser otimizadas para upload rápido, mesmo em conexões móveis.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Reduzir tempo de upload e evitar frustração, especialmente em regiões com internet limitada.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT21</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Upload concluído em menos de cinco segundos para imagens até 5MB em redes móveis padrão.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF13 (Estabilidade), RNF05 (Baixo hardware).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>S</strong> (Should have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Compressão agressiva pode impactar a qualidade visual das imagens.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p align="center"><i>Figura 6: SIG: Desempenho </i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfr_desempenho.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfr_desempenho.png"600"></a>
+</p>
+
+<h3 id="propagacao-dos-impactos_3">Propagação dos Impactos</h3>
+<p>A Tabela 4, apresentada a seguir, mostra a avaliação da propagação dos impactos representados na imagem acima.</p>
+<h3 id="tabela-4-tabela-de-impactos-desempenho">Tabela 4: Tabela de Impactos - Desempenho</h3>
+<table>
+<thead>
+<tr>
+<th><em>NFR</em></th>
+<th><em>Impacto</em></th>
+<th><em>Avaliador</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Navegação flúida</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Carregar informações otimizadas</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Estabilidade em redes móveis</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Autenticação rápida</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Funcionalidades principais otimizadas</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Otimização de envio de imagens</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+<tr>
+<td>Desempenho</td>
+<td>✔</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/ArtyMend07">Artur Mendonça</a>, 2025)</p></font></p>
+<p><strong>Vídeo 6</strong> - Validação e Priorização de NFR com usuário por <a href="https://github.com/ArtyMend07">Artur Mendonça</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/ry4nA8fRX_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://youtu.be/ry4nA8fRX_4" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Nome</strong></th>
+<th style="text-align: center;"><strong>Função</strong></th>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Hora</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td style="text-align: center;">Elaborador dos NFR</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">19:30</td>
+</tr>
+<tr>
+<td style="text-align: center;">Vitor Guilherme</td>
+<td style="text-align: center;">Usuário</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">19:30</td>
+</tr>
+</tbody>
+</table>
+<h2 id="termo-de-consentimento-de-imagem_5">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a(o) cidadão <strong>Vitor Guilherme</strong> forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1qYeorZ4h1cOOnnTkN-RvqZnSo8YIGk71/view?usp=sharing">PDF</a></p>
+<hr />
+<p align="center"><b>Tabela 18</b> — Cartão de Especificação 18</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF01</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O sistema deve ser compatível com vários dispositivos, como Android e iOS.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garante que o sistema funcione corretamente em diferentes ambientes, aumentando seu alcance e robustez.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/analise_documentos/#anchor_AD">AD09</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Funcionalidade completa testada e validada em pelo menos 95% dos dispositivos Android e iOS mais usados no mercado.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF08 (Responsividade), RNF19 (Compatibilidade com versões).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode aumentar a complexidade de testes e a necessidade de manutenção contínua.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 19</b> — Cartão de Especificação 19</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF08</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O layout deve ser responsivo para diferentes tamanhos de tela.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Assegura uma boa experiência em dispositivos variados, prevenindo falhas de visualização e uso.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/brainstorming/#anchor_BRN">BRN07</a>, <a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT22</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Interface validada em telas de diferentes tamanhos (smartphones, tablets, desktops) com 100% de legibilidade.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF01 (Compatibilidade), RNF19 (Versões Android/iOS).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir adaptações específicas por plataforma e aumentar o esforço de design.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 20</b> — Cartão de Especificação 20</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF12</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve garantir que as informações exibidas estejam atualizadas e reflitam fielmente a realidade.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Evita decisões erradas baseadas em dados desatualizados, essencial para áreas críticas como saúde e educação.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN02</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Os dados sensíveis devem ser atualizados automaticamente de fontes confiáveis a cada 24h.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF13 (Estabilidade), RNF22 (Segurança).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Necessidade de sincronização frequente pode impactar desempenho em conexões lentas.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 21</b> — Cartão de Especificação 21</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF18</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve ter uma aparência profissional e confiável para transmitir segurança aos usuários.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>A aparência impacta a percepção de qualidade e credibilidade, essencial para aceitação do sistema.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/entrevista/#anchor_EN">EN08</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes de percepção com usuários mostrando pelo menos 85% de avaliação positiva quanto à confiabilidade visual.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF03 (Interface intuitiva), RNF21 (Design acessível).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode aumentar custos de design e refinamento visual.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 22</b> — Cartão de Especificação 22</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF19</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve ser compatível com as versões mais recentes dos sistemas Android e iOS.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Garante que o sistema esteja atualizado e funcione corretamente nos dispositivos mais usados.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT15</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>Testes confirmando funcionamento total nas três versões mais recentes dos sistemas Android e iOS.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF01 (Compatibilidade), RNF08 (Responsividade).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Pode exigir atualizações frequentes e adaptações rápidas a mudanças de sistema operacional.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<hr />
+<p align="center"><b>Tabela 23</b> — Cartão de Especificação 23</p>
+
+<table>
+<thead>
+<tr>
+<th><em>Item</em></th>
+<th><em>Descrição</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Nr Requisito</em></td>
+<td><a href="/elicitacao/req_elicitados/#anchor_RF">RNF23</a></td>
+</tr>
+<tr>
+<td><em>Classificação</em></td>
+<td>Confiabilidade</td>
+</tr>
+<tr>
+<td><em>Descrição</em></td>
+<td>O aplicativo deve funcionar em modo offline para consulta de registros ou informações previamente acessadas.</td>
+</tr>
+<tr>
+<td><em>Justificativa</em></td>
+<td>Permite uso contínuo mesmo em condições de rede instáveis, aumentando a confiabilidade do sistema.</td>
+</tr>
+<tr>
+<td><em>Origem</em></td>
+<td><a href="../../elicitacao/tec_elicitacao/integracao/#anchor_INTT">INT20</a></td>
+</tr>
+<tr>
+<td><em>Critério de Aceitação</em></td>
+<td>As principais funcionalidades devem permanecer acessíveis offline, com sincronização automática ao voltar online.</td>
+</tr>
+<tr>
+<td><em>Dependências</em></td>
+<td>RNF12 (Dados atualizados), RNF13 (Estabilidade).</td>
+</tr>
+<tr>
+<td><em>Prioridade</em></td>
+<td><strong>M</strong> (Must have)</td>
+</tr>
+<tr>
+<td><em>Conflitos</em></td>
+<td>Sincronização offline pode gerar desafios técnicos e de consistência de dados.</td>
+</tr>
+<tr>
+<td><em>História</em></td>
+<td>Criado em 28/05/2025 – Última modificação em 31/05/2025</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<h2 id="nfr05-confiabilidade">NFR05: Confiabilidade</h2>
+<p>Este SIG (Softgoal Interdependency Graph) foi elaborado a partir de requisitos não funcionais relacionados à confiabilidade do sistema. Esses requisitos garantem que o sistema seja robusto, estável e funcione corretamente em diferentes situações e dispositivos.</p>
+<h2 id="requisitos_3">Requisitos:</h2>
+<p>Requisitos utilizados para desenvolver o SIG da Figura 5:</p>
+<h3 id="tabela-de-requisitos-relacionados-a-confiabilidade">Tabela de Requisitos Relacionados à Confiabilidade</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Código</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td>O sistema deve ser compatível com vários dispositivos, como Android e iOS.</td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td>O layout deve ser responsivo para diferentes tamanhos de tela.</td>
+</tr>
+<tr>
+<td>RNF12</td>
+<td>O aplicativo deve garantir que as informações exibidas estejam atualizadas e reflitam fielmente a realidade.</td>
+</tr>
+<tr>
+<td>RNF18</td>
+<td>O aplicativo deve ter uma aparência profissional e confiável para transmitir segurança aos usuários.</td>
+</tr>
+<tr>
+<td>RNF19</td>
+<td>O aplicativo deve ser compatível com as versões mais recentes dos sistemas Android e iOS.</td>
+</tr>
+<tr>
+<td>RNF23</td>
+<td>O aplicativo deve funcionar em modo offline para consulta de registros ou informações previamente acessadas.</td>
+</tr>
+</tbody>
+</table>
+<p align="center"><i>Figura 5: SIG: Confiabilidade</i></p>
+
+<p align="center">
+  <a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/modelagem/nfr/confiabilidade.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/modelagem/nfr/confiabilidade.png" width="800"></a>
+</p>
+
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<h3 id="analise-do-sig">Análise do SIG</h3>
+<p>O diagrama de Confiabilidade foi estruturado utilizando decomposição <strong>AND</strong>, indicando que todos os sub-softgoals devem ser satisfeitos para alcançar o objetivo principal de confiabilidade do sistema.</p>
+<h4 id="softgoals-identificados">Softgoals identificados:</h4>
+<ol>
+<li><strong>Compatibilidade de Plataforma</strong> (RNF01)</li>
+<li><strong>Responsividade</strong> (RNF08) </li>
+<li><strong>Dados Atualizados</strong> (RNF12)</li>
+<li><strong>Aparência Profissional</strong> (RNF18)</li>
+<li><strong>Compatibilidade de Versões</strong> (RNF19)</li>
+<li><strong>Funcionamento Offline</strong> (RNF23)</li>
+</ol>
+<h4 id="operacionalizacoes">Operacionalizações:</h4>
+<ul>
+<li><strong>Para Compatibilidade de Plataforma</strong>: "Testes em 95% dos dispositivos Android/iOS" [MAKE (++)]</li>
+<li><strong>Para Compatibilidade de Versões</strong>: "Suporte às 3 versões mais recentes" [MAKE (++)]</li>
+<li><strong>Para Responsividade</strong>: "Validação em múltiplos tamanhos de tela" [MAKE (++)] e "100% legibilidade garantida" [MAKE (++)]</li>
+<li><strong>Para Aparência Profissional</strong>: "85% aprovação em testes de percepção" [MAKE (++)]</li>
+<li><strong>Para Dados Atualizados</strong>: "Sincronização automática a cada 24h" [MAKE (++)]</li>
+<li><strong>Para Funcionamento Offline</strong>: "Cache local de dados" [MAKE (++)]</li>
+</ul>
+<h4 id="contribuicoes-entre-softgoals">Contribuições entre softgoals:</h4>
+<ul>
+<li><strong>Compatibilidade de Versões</strong> → <strong>Compatibilidade de Plataforma</strong>: MAKE (++)</li>
+<li><strong>Responsividade</strong> → <strong>Compatibilidade de Plataforma</strong>: HELP (+)</li>
+<li><strong>Aparência Profissional</strong> → <strong>Responsividade</strong>: HELP (+)</li>
+<li><strong>Funcionamento Offline</strong> → <strong>Dados Atualizados</strong>: HURT (-)</li>
+</ul>
+<h3 id="propagacao-dos-impactos_4">Propagação dos Impactos</h3>
+<p>A Tabela 5, apresentada a seguir, mostra a avaliação da propagação dos impactos no SIG de Confiabilidade.</p>
+<p align="center"><b>Tabela 5</b> — Tabela de Impactos - Confiabilidade</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>NFR</strong></th>
+<th><strong>Impacto</strong></th>
+<th><strong>Avaliador</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confiabilidade</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Compatibilidade de Plataforma</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Compatibilidade de Versões</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Responsividade</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Aparência Profissional</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Dados Atualizados</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Funcionamento Offline</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Testes em 95% dos dispositivos</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Suporte 3 versões recentes</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Validação múltiplos tamanhos</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>100% legibilidade garantida</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>85% aprovação em testes</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Sincronização a cada 24h</td>
+<td>𝒲+</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+<tr>
+<td>Cache local de dados</td>
+<td>✓</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center"> Fonte: Elaborado pelos autores (<a href="https://github.com/BrzGab">Gabriel Lopes</a>, 2025)</p></font></p>
+<h3 id="analise-dos-resultados">Análise dos Resultados</h3>
+<p>A análise da propagação mostra que:
+- Os requisitos de <strong>compatibilidade</strong> e <strong>responsividade</strong> foram plenamente satisfeitos (✓)
+- <strong>Aparência Profissional</strong> e <strong>Dados Atualizados</strong> foram fracamente satisfeitos (𝒲+), indicando necessidade de melhorias
+- Os requisitos de <strong>funcionamento offline</strong> e <strong>compatibilidade de versões</strong> foram plenamente satisfeitos (✓)
+- As operacionalizações relacionadas a testes e validações técnicas obtiveram satisfação plena</p>
+<h3 id="priorizacao-moscow_1">Priorização MoSCoW</h3>
+<p>Aplicando a técnica MoSCoW aos requisitos de confiabilidade:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Requisito</strong></th>
+<th><strong>Prioridade</strong></th>
+<th><strong>Justificativa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td><strong>M</strong> (Must)</td>
+<td>Compatibilidade multi-plataforma é essencial para alcançar todos os usuários</td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td><strong>M</strong> (Must)</td>
+<td>Responsividade é crítica para experiência do usuário em diferentes dispositivos</td>
+</tr>
+<tr>
+<td>RNF12</td>
+<td><strong>M</strong> (Must)</td>
+<td>Dados atualizados são fundamentais para a credibilidade do sistema</td>
+</tr>
+<tr>
+<td>RNF18</td>
+<td><strong>M</strong> (Must)</td>
+<td>Aparência profissional impacta diretamente na confiança dos usuários</td>
+</tr>
+<tr>
+<td>RNF19</td>
+<td><strong>M</strong> (Must)</td>
+<td>Compatibilidade com versões recentes garante funcionamento nos dispositivos atuais</td>
+</tr>
+<tr>
+<td>RNF23</td>
+<td><strong>M</strong> (Must)</td>
+<td>Funcionamento offline é essencial para áreas com conectividade limitada</td>
+</tr>
+</tbody>
+</table>
+<p>Todos os requisitos de confiabilidade foram classificados como <strong>Must have</strong>, refletindo sua importância crítica para o sucesso do sistema.</p>
+<h3 id="validacao-com-usuario">Validação com Usuário</h3>
+<p><strong>Vídeo 7</strong> - Validação e Priorização de NFR de Confiabilidade com usuário por <a href="https://github.com/BrzGab">Gabriel Lopes</a></p>
+<p style="text-align: center"><iframe width="560" height="315" src="https://youtube.com/embed/2zSk5e3hW_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<p style="text-align: center"><a href="https://www.youtube.com/watch?v=2zSk5e3hW_k" target="_blank">Clique aqui para assistir no YouTube</a></p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Nome</strong></th>
+<th style="text-align: center;"><strong>Função</strong></th>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Hora</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td style="text-align: center;">Elaborador dos NFR</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">19:30</td>
+</tr>
+<tr>
+<td style="text-align: center;">Daniel Rodrigues Nascimento</td>
+<td style="text-align: center;">Cidadão</td>
+<td style="text-align: center;">01/06/2025</td>
+<td style="text-align: center;">19:30</td>
+</tr>
+</tbody>
+</table>
+<h2 id="termo-de-consentimento-de-imagem_6">Termo de consentimento de imagem</h2>
+<p>Este documento confirma que a(o) cidadão <strong>Daniel Rodrigues Nascimento</strong> forneceu seu consentimento formal para o uso de sua imagem, conforme os termos estabelecidos.</p>
+<p>O termo foi assinado e encontra-se disponível no seguinte arquivo: <a href="https://drive.google.com/file/d/1EB1p_smwvLfqsPcUb_7nWpKIXuzLOx02/view">PDF</a></p>
+<hr />
+<h2 id="diagrama-compilado">Diagrama compilado</h2>
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfr_compilado.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfr_compilado.jpeg" ></a>
+</div>
+
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p>PAIM, F. R. S., CASTRO, J. F. B. Enhancing Data Warehouse Design with the NFR Framework. Centro de Informática UFPE, Recife, 2019. Disponível em: <a href="http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER02/paim.pdf">http://wer.inf.puc-rio.br/WERpapers/artigos/artigos_WER02/paim.pdf</a>. Acesso em: 22/05/2025</p>
+</blockquote>
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<blockquote>
+<p><a id="REF1" href="#anchor_1">1.</a>CHUNG, L., NIXON, B. A., YU, E., MYLOPOULOS, J. Non-functional requirementsin software engineering. Springer Science &amp; Business Media: [S.l.], 2000. v. 5.</p>
+</blockquote>
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrchung.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrchung.png" ></a>
+</div>
+
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrchung2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrchung2.png" ></a>
+</div>
+
+<blockquote>
+<p><a id="REF2" href="#anchor_2">2.</a>SILVA, Reinaldo Antônio. NFR4ES: Um Catálogo de Requisitos Não-Funcionais para Sistemas Embarcados. Centro de Informática UFPE, Recife, 2019. Disponível em: <a href="https://repositorio.ufpe.br/handle/123456789/34150">https://repositorio.ufpe.br/handle/123456789/34150</a>. Acesso em: 22/05/2025.</p>
+</blockquote>
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrreinaldo2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrreinaldo2.png" ></a>
+</div>
+
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrreinaldo.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrreinaldo.jpeg" ></a>
+</div>
+
+<div style="text-align: center">
+<a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrcartaodeespecifica%C3%A7%C3%A3o.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/nfr/docs/assets/nfr/nfrcartaodeespecifica%C3%A7%C3%A3o.png" ></a>
+</div>
+
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+<th>Data</th>
+<th>Revisor(es)</th>
+<th>Data de Revisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Criação da página e introdução</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>23/05/2025</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>23/05/2025</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Adição das tabela modelo de RNF</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Adição das tabela modelo Cartão de Especificação</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Adição de tabela Compatibilidade</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Adição de tabela Segurança</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>Adição dos cartões de especificação 5, 6, 7 e 8 sobre Usabilidade</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>Adição de tabela Acessibilidade</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>Adição de tabela Desempenho</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>Adição de tabela Responsividade</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.9</td>
+<td>Adição de tabela Confiabilidade</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.10</td>
+<td>Adição de tabela Autonomia/Offline</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.11</td>
+<td>Adição de tabela Aparência</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>28/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.12</td>
+<td>Arrumando as tabelas diminuindo com base na taxonomia</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>31/05/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.13</td>
+<td>Adicção do video com o usuario</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.14</td>
+<td>Adicção do video com o usuario</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.15</td>
+<td>Adicionando draw.io NFR</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a> e <a href="https://github.com/navicg">Ana Victória Guedes da Costa</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>1.16</td>
+<td>Adicionando diagrama NFR</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>1.17</td>
+<td>Adicionando Entrevista NFR</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a> e <a href="https://github.com/navicg">Ana Victória Guedes da Costa</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>1.18</td>
+<td>Adicionando validação NFR</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>1.19</td>
+<td>Adição do video, diagrama e validação do diagrama</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>03/06/2025</td>
+</tr>
+<tr>
+<td>1.20</td>
+<td>Adicionando entrevista, imagem, termo de consentimento, e validação do NFR</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>01/06/2025</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>01/06/2025</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>Adicionando correções e aba de entrevista presencial</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+<td>16/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>22/06/2025</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>Adicionando vídeo de entrevista presencial</td>
+<td><a href="https://github.com/navicg">Ana Victória Guedes da Costa</a> e <a href="https://github.com/KarolineLuz">Karoline Luz da Conceição</a></td>
+<td>18/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>22/06/2025</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Adicionando vídeo de entrevista presencial</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td>21/06/2025</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a></td>
+<td>22/06/2025</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

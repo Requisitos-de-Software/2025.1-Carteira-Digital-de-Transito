@@ -1,0 +1,3986 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../inspecao_1_grupo%2B1/">
+      
+      
+        <link rel="next" href="../inspecao_3_grupo%2B1/">
+      
+      
+      <link rel="icon" href="../../assets/egdf_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Entrega 2 - e-GDF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inspecao-do-grupo-entrega-2" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="e-GDF" class="md-header__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            e-GDF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entrega 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="claro" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="e-GDF" class="md-nav__button md-logo" aria-label="e-GDF" data-md-component="logo">
+      
+  <img src="../../assets/egdf_logo.png" alt="logo">
+
+    </a>
+    e-GDF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-e-GDF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-e-GDF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/apresentacao5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata_inspecao1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata da inspeção da entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/aplicativos_selecionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/app_selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Heat Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/termos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Termo de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/analise_documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analise de Documentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_elicitacao/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Moscow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/roi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ROI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/tec_priorizacao/100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/req_elicitados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/perfil_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/nfrframework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/historia-de-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/matriz_rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/forward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/backward_from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validacao/prototipacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prototipação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validacao/comprovacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega-final
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega-final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/aplicativo-selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos Selecionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/artefatos-criados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/execucao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/ferramentas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/entrega-final/resultados-alcancados.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/tabela-apresentacoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabela de Apresentações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/tecnicas-utilizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas utilizadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/panejamento-recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/verificacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/validacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Validação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrega-final/consideracoes-finais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Considerações Finais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/avaliacao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliação -1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega01/entrega01grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega02/entrega02grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega03/entrega03grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega04/entrega04grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega05/entrega05grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega06/entrega06grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_3" id="__nav_11_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega01/entrega01grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega02/entrega02grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega03/entrega03grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega04/entrega04grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega05/entrega05grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/grupo/entrega06/entrega06grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_1" id="__nav_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_1_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_2_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_3_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_4_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_6_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_5_grupo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo +1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_1_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-do-grupo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações do Grupo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-da-reuniao-inspecao-do-grupo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link da Reunião | Inspeção do grupo +1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_3_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_4_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_6_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspecao_5_grupo%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-do-grupo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informações do Grupo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-da-reuniao-inspecao-do-grupo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link da Reunião | Inspeção do grupo +1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="inspecao-do-grupo-entrega-2">Inspeção do Grupo: Entrega 2</h1>
+<h2 id="informacoes-do-grupo">Informações do Grupo:</h2>
+<ul>
+<li><strong>Grupo 9</strong>: <a href="https://github.com/Requisitos-de-Software/2025.1-GDF-Saude">GDF-Saude</a></li>
+<li><strong>Data</strong>: 05/05/2025</li>
+<li><strong>Local</strong>: Microsoft Teams</li>
+</ul>
+<h2 id="introducao">Introdução</h2>
+<p>A inspeção constitui uma fase essencial no ciclo de desenvolvimento de projetos. Nesta etapa, os artefatos produzidos são minuciosamente analisados para garantir que atendam aos requisitos especificados. Este documento apresenta o planejamento da inspeção dos artefatos desenvolvidos pelo Grupo 9 durante a Etapa 2.</p>
+<h2 id="objetivos">Objetivos</h2>
+<p>Este documento tem como finalidade verificar se os artefatos produzidos na Etapa 2 pelo Grupo 9 contêm todos os elementos necessários e seguem o padrão exigido.</p>
+<h2 id="participantes">Participantes</h2>
+<ul>
+<li>Ana Victória Guedes da Costa</li>
+<li>Artur Mendonça Arruda</li>
+<li>Gabriel Lopes de Amorim</li>
+<li>Joao Marcos Moraes De Andrade</li>
+<li>Karoline Luz da Conceição</li>
+<li>Lucas Mendonça Arruda</li>
+<li>Luiza da Silva Pugas</li>
+</ul>
+<p align="center">Tabela 1 – Lista de Inseção</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A Especificação do Perfil do usuário possui informação de: idade, experiência, atitudes e tarefas primárias.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_perfil1_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_perfil1_3.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Um cronograma (data e horário) e local para realização da elicitação dos requisitos com o cliente e/ou persona do projeto?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_cronograma2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_cronograma2.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>No mínimo três técnicas de elicitação foram utilizadas?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_perfil1_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_perfil1_3.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A participação do cliente e/ou persona na elicitação de requisitos?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_5.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>A gravação e o(s) registro(s) da elicitação dos requisitos (pré-rastreabilidade)?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_5.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Um cronograma (data e horário) e local para realização da priorização dos requisitos com o cliente e/ou persona do projeto?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_priorizacao_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_priorizacao_6.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>7</td>
+<td>No mínimo duas técnicas de priorização foram utilizadas?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnicas_priorizacao_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnicas_priorizacao_7.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>8</td>
+<td>A participação do cliente e/ou persona no processo de priorização?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_priorizacao_8_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_priorizacao_8_9.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>9</td>
+<td>A gravação e o(s) registro(s) da atividade de priorização dos requisitos?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_priorizacao_8_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_gravacao_priorizacao_8_9.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Cada integrante da equipe elaborou pelo menos um item do conteúdo da disciplina com referência bibliográfica da fonte e foto do texto referência?</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_item_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_item_10.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado pelos autores: (<a href="https://github.com/KarolineLuz">Karoline Luz</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025).</p></font></p>
+<hr />
+<p align="center">Tabela 2 – Lista de Inseção</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>O histórico de versão está padronizado no repositório? - Uso de convenções consistentes para registrar alterações no repositório do projeto.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_1.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Referências e bibliografia estão incluídas nos artefatos? - Citação correta de fontes utilizadas para fundamentar o projeto e seus artefatos.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_2.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tabelas e imagens possuem legenda e fonte, e são citadas no texto? - Elementos visuais devidamente legendados, com fontes citadas e contextualizadas no texto.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_3.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Existe introdução explicando os artefatos desenvolvidos? - Texto introdutório explicando a função e o conteúdo dos artefatos apresentados.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="http://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="http://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_4.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>O cronograma executado possui responsáveis e datas? - Planejamento real com datas e responsáveis, refletindo o que foi efetivamente feito.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_6.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>6</td>
+<td>As atas de reunião contêm data, horário, participantes e objetivos? - Documentos com registro formal das reuniões, contendo data, hora, participantes e objetivos.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_6.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>7</td>
+<td>As gravações de reuniões foram salvas? - Arquivos de vídeo das reuniões, armazenados para consulta futura.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_7.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>8</td>
+<td>As apresentações no YouTube estão configuradas como "não listado"? - Garantia de que os vídeos estão acessíveis apenas para quem tiver o link, respeitando a privacidade.</td>
+<td><a href="https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1314342">André Barros de Sales</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_tecnico_8.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado pelos autores: (<a href="https://github.com/KarolineLuz">Karoline Luz</a> e <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, 2025).</p></font></p>
+<hr />
+<p align="center">Tabela 3 – Lista de Inspeção de Introspecção</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A introdução explica claramente o que é a técnica de introspecção na engenharia de requisitos?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao1.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O documento define o propósito da utilização da introspecção no levantamento de requisitos?</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_2.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Existe registro detalhado de como a introspecção foi conduzida?</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_3_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_3_7.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Os requisitos identificados pela introspecção estão claramente documentados?</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_4.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Houve validação dos requisitos obtidos por introspecção com usuários reais ou stakeholders?</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_4.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>6</td>
+<td>O documento demonstra compreensão de que a introspecção é uma técnica relativamente simples de aplicar?</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_6.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Os analistas que aplicaram a técnica demonstraram conhecimento suficiente sobre o problema em questão?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_3_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/inspecao_introspeccao_3_7.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<p align="center">Tabela 4 – Lista de Inspeção de Glossário</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Verificar se o termo é único ou específico do domínio do negócio.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Verificar se o termo possui mais de uma definição possível no contexto do projeto.</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Verificar se o significado do termo é diferente do senso comum.</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Verificar se a definição do termo não é intuitiva para alguém de fora do domínio.</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Verificar se o termo é técnico e amplamente utilizado pelos profissionais do negócio.</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Verificar se o termo é uma sigla ou abreviação.</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Verificar se há sinônimos usados para o mesmo termo no projeto.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Verificar se há termos que parecem sinônimos, mas possuem significados distintos.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Verificar se o glossário foi revisado e validado por stakeholders e especialistas.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Verificar se há uma versão aprovada/documentada do glossário.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Verificar se há um processo definido para atualização contínua do glossário.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Verificar se o glossário está acessível a todos os envolvidos no projeto.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Verificar se o glossário está vinculado com os casos de uso, histórias de usuário ou requisitos.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Verificar se os termos do glossário são utilizados de forma consistente em toda a documentação.</td>
+<td><a href="https://github.com/luizaxx">Luiza Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/luizaxx">Luiza Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/glossario_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<p align="center">Tabela 5 – Lista de Inspeção de Entrevista</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>O artefato utilizou perguntas abertas?</td>
+<td><a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>As perguntas fechadas no artefato são utilizadas apenas quando necessário (como para filtrar perguntas subsequentes)?</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>O artefato possui um roteiro?</td>
+<td><a href="https://github.com/navicg">Ana Victória</a></td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>As perguntas do artefato são formuladas de maneira neutra, evitando influenciar as respostas?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>O roteiro do artefato evita perguntas longas ou complexas que possam sobrecarregar a memória do entrevistado?</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>6</td>
+<td>A estrutura do artefato segue as etapas recomendadas?</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>7</td>
+<td>O roteiro do artefato está preparado para explorar respostas sucintas com perguntas adicionais?</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/entrevista_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<p align="center">Tabela 6 – Lista de Inspeção de Grupo Focal</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>O grupo foi composto por usuários representativos do público-alvo?</td>
+<td><a href="https://github.com/navicg">Ana Victória</a> e <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A sessão foi registrada (por gravação ou anotações) para análise posterior?</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Houve diversidade de perfis ou classes de usuários na composição do grupo?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A sessão contribuiu para a identificação de necessidades, impressões e preferências dos usuários?</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/grupofoca_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<p align="center">Tabela 7 – Lista de Inspeção de Moscow</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>O grupo foi composto por usuários representativos do público-alvo?</td>
+<td><a href="https://github.com/navicg">Ana Victória</a> e <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A sessão foi registrada (por gravação ou anotações) para análise posterior?</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Houve diversidade de perfis ou classes de usuários na composição do grupo?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A sessão contribuiu para a identificação de necessidades, impressões e preferências dos usuários?</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/moscow_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<p align="center">Tabela 8 – Lista de Inspeção de $100 dólares</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Item de Verificação</th>
+<th>Autor</th>
+<th>Revisores</th>
+<th>Evidência</th>
+<th>Conforme / Não Conforme / Incompleto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Foi atribuída uma quantia limitada de $100 fictícios para distribuir entre os requisitos?</td>
+<td><a href="https://github.com/navicg">Ana Victória</a> e <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Os participantes foram instruídos a distribuir os valores com base na importância percebida de cada requisito?</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A técnica foi aplicada de forma individual (cada participante fez sua própria alocação)?</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Foi realizada a soma total dos valores atribuídos por todos os participantes para cada requisito?</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Foram tomadas precauções contra manipulação ou distorções na priorização (como alocar os $100 em um único requisito)?</td>
+<td><a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a></td>
+<td><a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/KarolineLuz">Karoline Luz</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a></td>
+<td><div><a class="glightbox" href="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/Requisitos-de-Software/2025.1-e-GDF/refs/heads/docs/correcao-verificacao-inspecao2/docs/assets/inspecao2_grupo%2B1/100_todos.png"></a></div></td>
+<td><input type="checkbox" checked> Conforme</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3"><p style="text-align: center">Elaborado por: <a href="https://github.com/navicg">Ana Victória</a>, <a href="https://github.com/ArtyMend07">Artur Mendonça</a>, <a href="https://github.com/BrzGab">Gabriel Lopes</a>, <a href="https://github.com/JJOAOMARCOSS">João Marcos</a>, <a href="https://github.com/lucasarruda9">Lucas Mendonça</a>, <a href="https://github.com/Luizaxx">Luiza da Silva Pugas</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a> .</p></font></p>
+<hr />
+<h2 id="link-da-reuniao-inspecao-do-grupo-1">Link da Reunião | Inspeção do grupo +1</h2>
+<p style="text-align: center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Zmu4ymFXeIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>Lista de verificação elaborada pelo grupo para avaliar todos os artefatos da Entrega 5 do projeto. Disponível em: <a href="../../verificacao/grupo/entrega02/entrega02grupo/">Lista de verificação</a>.</li>
+</ul>
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+<th>Data</th>
+<th>Revisor(es)</th>
+<th>Data de revisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Criação da documentação do Verificação</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>05/05/2025</td>
+<td><a href="https://github.com/ArtyMend07">Artur Mendonça</a></td>
+<td>05/05/2025</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Ajustes conforme e não conforme</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>05/05/2025</td>
+<td><a href="https://github.com/luizaxx">Luiza da Silva</a></td>
+<td>05/05/2025</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Ajustes gerais no documento</td>
+<td><a href="https://github.com/BrzGab">Gabriel Lopes</a></td>
+<td>08/05/2025</td>
+<td><a href="https://github.com/luizaxx">Luiza da Silva</a></td>
+<td>08/05/2025</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Adicionando a inspeção 2 depois da avaliação da nossa monitora</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/navicg">Ana Victória</a></td>
+<td>20/06/2025</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>20/06/2025</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Adicionando as evidências da inspeção 2 depois da avaliação da nossa monitora</td>
+<td><a href="https://github.com/JJOAOMARCOSS">João Marcos Moraes</a> e <a href="https://github.com/navicg">Ana Victória</a></td>
+<td>20/06/2025</td>
+<td><a href="https://github.com/KarolineLuz">Karoline Luz</a></td>
+<td>20/06/2025</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
